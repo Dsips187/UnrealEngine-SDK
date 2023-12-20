@@ -1,0 +1,138 @@
+#pragma once
+
+#include "CoreMinimal.h"
+
+struct FVyGetUserPreferencesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserPreferencesComplete, FVyGetUserPreferencesResponse);
+
+struct FVyUpdateUserPreferencesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnUpdateUserPreferencesComplete, FVyUpdateUserPreferencesResponse);
+
+struct FVyApproveOfferMetaTxResponse;
+DECLARE_DELEGATE_OneParam(FVyOnApproveOfferMetaTxComplete, FVyApproveOfferMetaTxResponse);
+
+struct FVyGetUsersResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUsersComplete, FVyGetUsersResponse);
+
+struct FVyCreateSubUserResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateSubUserComplete, FVyCreateSubUserResponse);
+
+struct FVyGetDepositAddressesByUserIdResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetDepositAddressesByUserIdComplete, FVyGetDepositAddressesByUserIdResponse);
+
+struct FVyCreateDepositAddressForUserIdResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateDepositAddressForUserIdComplete, FVyCreateDepositAddressForUserIdResponse);
+
+struct FVyGetDepositAddressesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetDepositAddressesComplete, FVyGetDepositAddressesResponse);
+
+struct FVyCreateDepositAddressResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateDepositAddressComplete, FVyCreateDepositAddressResponse);
+
+struct FVyCreateOrderResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateOrderComplete, FVyCreateOrderResponse);
+
+struct FVyGetOffersResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetOffersComplete, FVyGetOffersResponse);
+
+struct FVyCreateAuctionOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateAuctionOfferComplete, FVyCreateAuctionOfferResponse);
+
+struct FVyCreateSaleOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateSaleOfferComplete, FVyCreateSaleOfferResponse);
+
+struct FVyBidOnOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnBidOnOfferComplete, FVyBidOnOfferResponse);
+
+struct FVyGetFulfillmentsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetFulfillmentsComplete, FVyGetFulfillmentsResponse);
+
+struct FVyTerminateOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnTerminateOfferComplete, FVyTerminateOfferResponse);
+
+struct FVyPurchaseOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnPurchaseOfferComplete, FVyPurchaseOfferResponse);
+
+struct FVyCancelOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCancelOfferComplete, FVyCancelOfferResponse);
+
+struct FVyGetCollectionsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCollectionsComplete, FVyGetCollectionsResponse);
+
+struct FVyUpdateOrderResponse;
+DECLARE_DELEGATE_OneParam(FVyOnUpdateOrderComplete, FVyUpdateOrderResponse);
+
+struct FVyGetOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetOfferComplete, FVyGetOfferResponse);
+
+struct FVyUpdateOfferResponse;
+DECLARE_DELEGATE_OneParam(FVyOnUpdateOfferComplete, FVyUpdateOfferResponse);
+
+struct FVyApproveOfferTxResponse;
+DECLARE_DELEGATE_OneParam(FVyOnApproveOfferTxComplete, FVyApproveOfferTxResponse);
+
+struct FVyAddOfferSignatureResponse;
+DECLARE_DELEGATE_OneParam(FVyOnAddOfferSignatureComplete, FVyAddOfferSignatureResponse);
+
+struct FVyUpdateFulfillmentAssociationResponse;
+DECLARE_DELEGATE_OneParam(FVyOnUpdateFulfillmentAssociationComplete, FVyUpdateFulfillmentAssociationResponse);
+
+struct FVyGetUserOrdersByUserIdResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOrdersByUserIdComplete, FVyGetUserOrdersByUserIdResponse);
+
+struct FVyGetUserOrderByUserIdResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOrderByUserIdComplete, FVyGetUserOrderByUserIdResponse);
+
+struct FVyGetUserOffersByUserIdResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOffersByUserIdComplete, FVyGetUserOffersByUserIdResponse);
+
+struct FVyGetCreditBalanceResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCreditBalanceComplete, FVyGetCreditBalanceResponse);
+
+struct FVyGetUserProfileResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserProfileComplete, FVyGetUserProfileResponse);
+
+struct FVyGetRolesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetRolesComplete, FVyGetRolesResponse);
+
+struct FVyGetUserOrdersResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOrdersComplete, FVyGetUserOrdersResponse);
+
+struct FVyGetUserOrderResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOrderComplete, FVyGetUserOrderResponse);
+
+struct FVyGetUserOrderWithdrawalMaxResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOrderWithdrawalMaxComplete, FVyGetUserOrderWithdrawalMaxResponse);
+
+struct FVyGetUserOffersResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserOffersComplete, FVyGetUserOffersResponse);
+
+struct FVyGetUserFulfillmentsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetUserFulfillmentsComplete, FVyGetUserFulfillmentsResponse);
+
+struct FVyGetCreditBalancesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCreditBalancesComplete, FVyGetCreditBalancesResponse);
+
+struct FVyGetCreditHistoryResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCreditHistoryComplete, FVyGetCreditHistoryResponse);
+
+struct FVyGetSupportedMarketChainsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetSupportedMarketChainsComplete, FVyGetSupportedMarketChainsResponse);
+
+struct FVyPrepareOfferTransactionResponse;
+DECLARE_DELEGATE_OneParam(FVyOnPrepareOfferTransactionComplete, FVyPrepareOfferTransactionResponse);
+
+struct FVyFindHotOffersResponse;
+DECLARE_DELEGATE_OneParam(FVyOnFindHotOffersComplete, FVyFindHotOffersResponse);
+
+struct FVyGetFulfillmentResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetFulfillmentComplete, FVyGetFulfillmentResponse);
+
+struct FVyGetWithdrawalFeesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetWithdrawalFeesComplete, FVyGetWithdrawalFeesResponse);
+
+struct FVyGetFeesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetFeesComplete, FVyGetFeesResponse);
+
+struct FVyGetCollectionResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCollectionComplete, FVyGetCollectionResponse);

@@ -1,0 +1,63 @@
+#pragma once
+
+#include "CoreMinimal.h"
+
+struct FVyGetTokenTypeMetadataResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetTokenTypeMetadataComplete, FVyGetTokenTypeMetadataResponse);
+
+struct FVyUpdateTokenTypeMetadataResponse;
+DECLARE_DELEGATE_OneParam(FVyOnUpdateTokenTypeMetadataComplete, FVyUpdateTokenTypeMetadataResponse);
+
+struct FVyGetCompanyWalletsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCompanyWalletsComplete, FVyGetCompanyWalletsResponse);
+
+struct FVyCreateCompanyWalletResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateCompanyWalletComplete, FVyCreateCompanyWalletResponse);
+
+struct FVyMintTokensResponse;
+DECLARE_DELEGATE_OneParam(FVyOnMintTokensComplete, FVyMintTokensResponse);
+
+struct FVyGetTokenTypesResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetTokenTypesComplete, FVyGetTokenTypesResponse);
+
+struct FVyCreateTokenTypeResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateTokenTypeComplete, FVyCreateTokenTypeResponse);
+
+struct FVyGetContractsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetContractsComplete, FVyGetContractsResponse);
+
+struct FVyCreateContractResponse;
+DECLARE_DELEGATE_OneParam(FVyOnCreateContractComplete, FVyCreateContractResponse);
+
+struct FVyAddNftMediaResponse;
+DECLARE_DELEGATE_OneParam(FVyOnAddNftMediaComplete, FVyAddNftMediaResponse);
+
+struct FVyAddNftImageResponse;
+DECLARE_DELEGATE_OneParam(FVyOnAddNftImageComplete, FVyAddNftImageResponse);
+
+struct FVyGetContractMetadataResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetContractMetadataComplete, FVyGetContractMetadataResponse);
+
+struct FVyUpdateContractMetadataResponse;
+DECLARE_DELEGATE_OneParam(FVyOnUpdateContractMetadataComplete, FVyUpdateContractMetadataResponse);
+
+struct FVyGetTokensResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetTokensComplete, FVyGetTokensResponse);
+
+struct FVyGetCompanyWalletByChainResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetCompanyWalletByChainComplete, FVyGetCompanyWalletByChainResponse);
+
+struct FVyGetTokenInfosResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetTokenInfosComplete, FVyGetTokenInfosResponse);
+
+struct FVyGetTokenTypeResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetTokenTypeComplete, FVyGetTokenTypeResponse);
+
+struct FVyGetContractResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetContractComplete, FVyGetContractResponse);
+
+struct FVyGetSupportedNftChainsResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetSupportedNftChainsComplete, FVyGetSupportedNftChainsResponse);
+
+struct FVyGetTokenResponse;
+DECLARE_DELEGATE_OneParam(FVyOnGetTokenComplete, FVyGetTokenResponse);

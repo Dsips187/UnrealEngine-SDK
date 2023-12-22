@@ -49,4 +49,5 @@ _note_: The **VenlyPlayFab** plugin depends on both the **Venly** and **PlayFab*
 
 ## Documentation
 
-More information on the Venly SDK plugin for Unreal Engine can be found [here](https://docs.venly.io/docs/getting-started-with-unreal-engine)
+[Docs & Guides](https://docs.venly.io/docs/getting-started-with-unreal-engine)\
+[API Reference](https://sdk.venly.io/sdk-reference/ue5-sdk/function-reference)

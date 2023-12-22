@@ -1,11 +1,11 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptOrderType.h"
-#include "AutoGen/Optionals/VyOptChain.h"
-#include "AutoGen/Optionals/VyOptDouble.h"
 #include "AutoGen/Models/Wallet/VyExchangeRateResultDto.h"
+#include "AutoGen/Optionals/VyOptOrderType.h"
+#include "AutoGen/Optionals/VyOptDouble.h"
+#include "AutoGen/Optionals/VyOptChain.h"
+#include "AutoGen/Optionals/VyOptString.h"
 
 #include "VyGetExchangeRate_Wallet.generated.h"
 
@@ -14,7 +14,7 @@
 * Optional query to filter the GetExchangeRate endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetExchangeRate : public FVyQuery
+struct VENLY_API FVyQuery_GetExchangeRate : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on the source Chain*/
@@ -36,7 +36,7 @@ struct FVyQuery_GetExchangeRate : public FVyQuery
 
 //RESPONSE [ExchangeRateResult]
 USTRUCT(BlueprintType)
-struct FVyGetExchangeRateResponse : public FVyApiResponse
+struct VENLY_API FVyGetExchangeRateResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyExchangeRateResultDto Result;

@@ -2,8 +2,8 @@
 
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Market/VyOfferDto.h"
 #include "AutoGen/Optionals/VyOptDouble.h"
+#include "AutoGen/Models/Market/VyOfferDto.h"
 
 #include "VyBidOnOffer_Market.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters for placing a bid
 */
 USTRUCT(BlueprintType)
-struct FVyBidRequest : public FVyDTO
+struct VENLY_API FVyBidRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Identifier of the user placing the bid*/
@@ -28,7 +28,7 @@ struct FVyBidRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyBidRequestRef : public UObject
+class VENLY_API UVyBidRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -47,7 +47,7 @@ class UVyBidRequestRef : public UObject
 };
 //RESPONSE [update_merged]
 USTRUCT(BlueprintType)
-struct FVyBidOnOfferResponse : public FVyApiResponse
+struct VENLY_API FVyBidOnOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferDto Result;

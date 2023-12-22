@@ -8,7 +8,7 @@
 
 //RESPONSE [UserPreferencesDto]
 USTRUCT(BlueprintType)
-struct FVyGetUserPreferencesResponse : public FVyApiResponse
+struct VENLY_API FVyGetUserPreferencesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyUserPreferencesDto Result;

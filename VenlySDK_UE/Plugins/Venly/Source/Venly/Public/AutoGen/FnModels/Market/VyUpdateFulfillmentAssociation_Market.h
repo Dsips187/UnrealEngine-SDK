@@ -11,7 +11,7 @@
 * Request parameters to update a fulfillment association
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateFulfillmentAssociationRequest : public FVyDTO
+struct VENLY_API FVyUpdateFulfillmentAssociationRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the fulfillment association*/
@@ -22,7 +22,7 @@ struct FVyUpdateFulfillmentAssociationRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateFulfillmentAssociationRequestRef : public UObject
+class VENLY_API UVyUpdateFulfillmentAssociationRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -41,7 +41,7 @@ class UVyUpdateFulfillmentAssociationRequestRef : public UObject
 };
 //RESPONSE [updateAssociation_merged]
 USTRUCT(BlueprintType)
-struct FVyUpdateFulfillmentAssociationResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateFulfillmentAssociationResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyFulfillmentAssociationDto Result;

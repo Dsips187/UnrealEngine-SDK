@@ -11,7 +11,7 @@
 * Request parameters to update an order
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateOrderRequest : public FVyDTO
+struct VENLY_API FVyUpdateOrderRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The updated amount for the order*/
@@ -20,7 +20,7 @@ struct FVyUpdateOrderRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateOrderRequestRef : public UObject
+class VENLY_API UVyUpdateOrderRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -39,7 +39,7 @@ class UVyUpdateOrderRequestRef : public UObject
 };
 //RESPONSE [OrderDto]
 USTRUCT(BlueprintType)
-struct FVyUpdateOrderResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateOrderResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOrderDto Result;

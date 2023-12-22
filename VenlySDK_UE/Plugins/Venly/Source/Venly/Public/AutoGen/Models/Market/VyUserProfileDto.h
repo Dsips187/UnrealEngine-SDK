@@ -8,7 +8,7 @@
 * User profile information
 */
 USTRUCT(BlueprintType)
-struct FVyUserProfileDto : public FVyDTO
+struct VENLY_API FVyUserProfileDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**User ID*/
@@ -21,7 +21,7 @@ struct FVyUserProfileDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUserProfileDtoRef : public UObject
+class VENLY_API UVyUserProfileDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

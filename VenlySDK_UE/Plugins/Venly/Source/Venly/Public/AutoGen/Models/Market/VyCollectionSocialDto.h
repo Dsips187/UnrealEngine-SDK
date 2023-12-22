@@ -7,7 +7,7 @@
 * A social media information for an NFT collection
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionSocialDto : public FVyDTO
+struct VENLY_API FVyCollectionSocialDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of social media*/
@@ -18,7 +18,7 @@ struct FVyCollectionSocialDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionSocialDtoRef : public UObject
+class VENLY_API UVyCollectionSocialDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

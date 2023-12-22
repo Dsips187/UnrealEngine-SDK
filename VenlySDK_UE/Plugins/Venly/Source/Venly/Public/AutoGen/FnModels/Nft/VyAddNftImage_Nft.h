@@ -11,7 +11,7 @@
 * Request parameters to add an image to an NFT
 */
 USTRUCT(BlueprintType)
-struct FVyAddNftImageRequest : public FVyDTO
+struct VENLY_API FVyAddNftImageRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The file path or URL of the image to be added*/
@@ -20,7 +20,7 @@ struct FVyAddNftImageRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyAddNftImageRequestRef : public UObject
+class VENLY_API UVyAddNftImageRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -39,7 +39,7 @@ class UVyAddNftImageRequestRef : public UObject
 };
 //RESPONSE [UploadNftImageResponse]
 USTRUCT(BlueprintType)
-struct FVyAddNftImageResponse : public FVyApiResponse
+struct VENLY_API FVyAddNftImageResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyNftImageDto Result;

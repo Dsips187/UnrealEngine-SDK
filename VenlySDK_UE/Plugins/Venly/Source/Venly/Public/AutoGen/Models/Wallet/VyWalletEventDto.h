@@ -8,7 +8,7 @@
 * Data structure representing a wallet event
 */
 USTRUCT(BlueprintType)
-struct FVyWalletEventDto : public FVyDTO
+struct VENLY_API FVyWalletEventDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The timestamp of the event*/
@@ -31,7 +31,7 @@ struct FVyWalletEventDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWalletEventDtoRef : public UObject
+class VENLY_API UVyWalletEventDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

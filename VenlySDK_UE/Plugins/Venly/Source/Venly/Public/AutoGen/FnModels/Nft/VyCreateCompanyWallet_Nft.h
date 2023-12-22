@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/VyEnums_generated.h"
 #include "AutoGen/Models/Nft/VyCompanyWalletDto.h"
 #include "AutoGen/Optionals/VyOptCompanyWalletType.h"
+#include "AutoGen/VyEnums_generated.h"
 
 #include "VyCreateCompanyWallet_Nft.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters to create a company wallet
 */
 USTRUCT(BlueprintType)
-struct FVyCreateCompanyWalletRequest : public FVyDTO
+struct VENLY_API FVyCreateCompanyWalletRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the company wallet*/
@@ -24,7 +24,7 @@ struct FVyCreateCompanyWalletRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateCompanyWalletRequestRef : public UObject
+class VENLY_API UVyCreateCompanyWalletRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -43,7 +43,7 @@ class UVyCreateCompanyWalletRequestRef : public UObject
 };
 //RESPONSE [create_merged]
 USTRUCT(BlueprintType)
-struct FVyCreateCompanyWalletResponse : public FVyApiResponse
+struct VENLY_API FVyCreateCompanyWalletResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyCompanyWalletDto Result;

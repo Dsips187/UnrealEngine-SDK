@@ -1,16 +1,16 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
+#include "AutoGen/Models/Market/VyNftDetailsDto.h"
 #include "AutoGen/VyEnums_generated.h"
 #include "AutoGen/Models/Market/VyUserProfileDto.h"
-#include "AutoGen/Models/Market/VyNftDetailsDto.h"
 #include "VySaleDto.generated.h"
 
 /*
 * Sale details
 */
 USTRUCT(BlueprintType)
-struct FVySaleDto : public FVyDTO
+struct VENLY_API FVySaleDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The total amount of the sale*/
@@ -75,7 +75,7 @@ struct FVySaleDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySaleDtoRef : public UObject
+class VENLY_API UVySaleDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

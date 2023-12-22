@@ -8,7 +8,7 @@
 * A pageable object
 */
 USTRUCT(BlueprintType)
-struct FVyPageableObjectDto : public FVyDTO
+struct VENLY_API FVyPageableObjectDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The offset of the pageable object*/
@@ -27,7 +27,7 @@ struct FVyPageableObjectDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyPageableObjectDtoRef : public UObject
+class VENLY_API UVyPageableObjectDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

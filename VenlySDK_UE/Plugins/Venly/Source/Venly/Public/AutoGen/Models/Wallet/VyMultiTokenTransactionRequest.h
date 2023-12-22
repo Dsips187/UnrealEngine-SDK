@@ -2,15 +2,15 @@
 #include "Models/VyCoreModels.h"
 
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptNetwork.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Optionals/VyOptNetwork.h"
 #include "VyMultiTokenTransactionRequest.generated.h"
 
 /*
 * Request parameters for a multi-token transaction
 */
 USTRUCT(BlueprintType)
-struct FVyMultiTokenTransactionRequest : public FVyDTO
+struct VENLY_API FVyMultiTokenTransactionRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the wallet*/
@@ -41,7 +41,7 @@ struct FVyMultiTokenTransactionRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMultiTokenTransactionRequestRef : public UObject
+class VENLY_API UVyMultiTokenTransactionRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:

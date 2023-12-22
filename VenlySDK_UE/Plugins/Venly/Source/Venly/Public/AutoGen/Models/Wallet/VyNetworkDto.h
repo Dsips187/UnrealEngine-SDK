@@ -7,7 +7,7 @@
 * Data structure representing a network
 */
 USTRUCT(BlueprintType)
-struct FVyNetworkDto : public FVyDTO
+struct VENLY_API FVyNetworkDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the network*/
@@ -20,7 +20,7 @@ struct FVyNetworkDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNetworkDtoRef : public UObject
+class VENLY_API UVyNetworkDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

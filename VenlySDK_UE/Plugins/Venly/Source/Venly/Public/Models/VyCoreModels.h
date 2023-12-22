@@ -14,7 +14,7 @@
 typedef int64 FVyRequestId;
 
 USTRUCT(BlueprintType)
-struct FVyQuery
+struct VENLY_API FVyQuery
 {
 	GENERATED_BODY();
 
@@ -43,7 +43,7 @@ private:
 };
 
 USTRUCT(BlueprintType)
-struct FVyDTO
+struct VENLY_API FVyDTO
 {
 	GENERATED_BODY()
 	virtual ~FVyDTO() = default;
@@ -73,7 +73,7 @@ private:
 };
 
 USTRUCT(BlueprintType, meta=(VyPostSerialize))
-struct FVyAuthToken : public FVyDTO
+struct VENLY_API FVyAuthToken : public FVyDTO
 {
 	GENERATED_BODY()
 
@@ -86,9 +86,9 @@ struct FVyAuthToken : public FVyDTO
 		return ExpireTime > FDateTime::UtcNow();
 	}
 
-	virtual VENLY_API void PostSerialize(const TSharedRef<FJsonObject> JsonObject) override;
-	virtual VENLY_API bool HasPropertyLUT() const override { return true; }
-	virtual VENLY_API const TMap<FName, FName>& GetPropertyLUT() const override
+	virtual void PostSerialize(const TSharedRef<FJsonObject> JsonObject) override;
+	virtual bool HasPropertyLUT() const override { return true; }
+	virtual const TMap<FName, FName>& GetPropertyLUT() const override
 	{
 		static const TMap<FName, FName> LUT_Names = {
 		{TEXT("Token"), TEXT("access_token")},
@@ -100,7 +100,7 @@ struct FVyAuthToken : public FVyDTO
 };
 
 USTRUCT(BlueprintType)
-struct FVyResponseContext
+struct VENLY_API FVyResponseContext
 {
 	GENERATED_BODY()
 
@@ -110,14 +110,14 @@ struct FVyResponseContext
 };
 
 USTRUCT(BlueprintType)
-struct FVyHttpMethod
+struct VENLY_API FVyHttpMethod
 {
 	GENERATED_BODY()
 	UPROPERTY(BlueprintReadOnly, Category = "Venly") FString Method {};
 };
 
 USTRUCT(BlueprintType)
-struct FVyRequestData : public FVyDTO
+struct VENLY_API FVyRequestData : public FVyDTO
 {
 	GENERATED_BODY()
 
@@ -134,7 +134,7 @@ struct FVyRequestData : public FVyDTO
 };
 
 USTRUCT(BlueprintType)
-struct FVyRequestContext
+struct VENLY_API FVyRequestContext
 {
 	GENERATED_BODY()
 
@@ -282,7 +282,7 @@ private:
 };
 
 USTRUCT(BlueprintType)
-struct FVyExtensionRequestContext
+struct VENLY_API FVyExtensionRequestContext
 {
 	GENERATED_BODY()
 
@@ -310,7 +310,7 @@ struct FVyExtensionRequestContext
 
 
 USTRUCT(BlueprintType)
-struct FVyResponseError
+struct VENLY_API FVyResponseError
 {
 	GENERATED_BODY()
 
@@ -320,7 +320,7 @@ struct FVyResponseError
 };
 
 USTRUCT(BlueprintType)
-struct FVyApiResponse
+struct VENLY_API FVyApiResponse
 {
 	GENERATED_BODY()
 
@@ -330,7 +330,7 @@ struct FVyApiResponse
 };
 
 USTRUCT(BlueprintType)
-struct FVyServerResponse
+struct VENLY_API FVyServerResponse
 {
 	GENERATED_BODY()
 
@@ -343,13 +343,13 @@ struct FVyServerResponse
 };
 
 USTRUCT(BlueprintType)
-struct FVyApiUnitResponse : public FVyApiResponse
+struct VENLY_API FVyApiUnitResponse : public FVyApiResponse
 {
 	GENERATED_BODY()
 };
 
 USTRUCT(BlueprintType)
-struct FVyResponseTrait_VariantResult
+struct VENLY_API FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY()
 };

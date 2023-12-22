@@ -8,7 +8,7 @@
 * Represents the response after minting tokens
 */
 USTRUCT(BlueprintType)
-struct FVyMintedTokensDto : public FVyDTO
+struct VENLY_API FVyMintedTokensDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The hash of the transaction that minted the tokens*/
@@ -25,7 +25,7 @@ struct FVyMintedTokensDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMintedTokensDtoRef : public UObject
+class VENLY_API UVyMintedTokensDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

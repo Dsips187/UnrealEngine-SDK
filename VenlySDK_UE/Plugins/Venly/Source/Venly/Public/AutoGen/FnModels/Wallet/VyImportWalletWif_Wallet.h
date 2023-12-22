@@ -1,11 +1,11 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Wallet/VyWalletDto.h"
 #include "AutoGen/Optionals/VyOptWalletImportType.h"
-#include "AutoGen/Optionals/VyOptStringArray.h"
 #include "AutoGen/Optionals/VyOptWalletType.h"
+#include "AutoGen/Models/Wallet/VyWalletDto.h"
+#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptStringArray.h"
 
 #include "VyImportWalletWif_Wallet.generated.h"
 
@@ -15,7 +15,7 @@
 * Request parameters to import a WIF wallet
 */
 USTRUCT(BlueprintType)
-struct FVyWifWalletImportRequest : public FVyDTO
+struct VENLY_API FVyWifWalletImportRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The WIF (Wallet Import Format) key*/
@@ -32,7 +32,7 @@ struct FVyWifWalletImportRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWifWalletImportRequestRef : public UObject
+class VENLY_API UVyWifWalletImportRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -51,7 +51,7 @@ class UVyWifWalletImportRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyImportWalletWifResponse : public FVyApiResponse
+struct VENLY_API FVyImportWalletWifResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

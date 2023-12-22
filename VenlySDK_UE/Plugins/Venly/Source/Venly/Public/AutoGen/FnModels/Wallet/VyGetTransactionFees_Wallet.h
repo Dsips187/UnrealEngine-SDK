@@ -7,7 +7,7 @@
 
 //RESPONSE [#type]
 USTRUCT(BlueprintType)
-struct FVyGetTransactionFeesResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
+struct VENLY_API FVyGetTransactionFeesResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FString Result;

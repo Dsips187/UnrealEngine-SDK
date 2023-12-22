@@ -12,7 +12,7 @@
 * Request parameters to cancel a transaction
 */
 USTRUCT(BlueprintType)
-struct FVyTransactionCancelRequest : public FVyDTO
+struct VENLY_API FVyTransactionCancelRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The blockchain on which the transaction is taking place*/
@@ -29,7 +29,7 @@ struct FVyTransactionCancelRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTransactionCancelRequestRef : public UObject
+class VENLY_API UVyTransactionCancelRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -48,7 +48,7 @@ class UVyTransactionCancelRequestRef : public UObject
 };
 //RESPONSE [TransactionResult]
 USTRUCT(BlueprintType)
-struct FVyCancelTransactionResponse : public FVyApiResponse
+struct VENLY_API FVyCancelTransactionResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTransactionResultDto Result;

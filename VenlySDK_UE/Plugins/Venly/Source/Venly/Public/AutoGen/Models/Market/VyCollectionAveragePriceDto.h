@@ -7,7 +7,7 @@
 * A data transfer object representing the average price of a collection
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionAveragePriceDto : public FVyDTO
+struct VENLY_API FVyCollectionAveragePriceDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The average price of the collection in the last 7 days*/
@@ -22,7 +22,7 @@ struct FVyCollectionAveragePriceDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionAveragePriceDtoRef : public UObject
+class VENLY_API UVyCollectionAveragePriceDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

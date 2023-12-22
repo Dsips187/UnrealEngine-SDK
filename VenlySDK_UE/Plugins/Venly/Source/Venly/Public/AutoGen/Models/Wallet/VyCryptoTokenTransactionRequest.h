@@ -1,18 +1,18 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/VyEnums_generated.h"
 #include "AutoGen/Optionals/VyOptNetwork.h"
-#include "AutoGen/Optionals/VyOptDouble.h"
+#include "AutoGen/VyEnums_generated.h"
 #include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Optionals/VyOptDouble.h"
+#include "AutoGen/Optionals/VyOptString.h"
 #include "VyCryptoTokenTransactionRequest.generated.h"
 
 /*
 * Request parameters for a crypto token transaction
 */
 USTRUCT(BlueprintType)
-struct FVyCryptoTokenTransactionRequest : public FVyDTO
+struct VENLY_API FVyCryptoTokenTransactionRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the wallet*/
@@ -41,7 +41,7 @@ struct FVyCryptoTokenTransactionRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCryptoTokenTransactionRequestRef : public UObject
+class VENLY_API UVyCryptoTokenTransactionRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:

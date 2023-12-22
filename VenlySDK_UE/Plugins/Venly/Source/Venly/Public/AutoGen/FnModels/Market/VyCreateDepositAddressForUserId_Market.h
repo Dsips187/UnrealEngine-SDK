@@ -12,7 +12,7 @@
 * Request parameters to create a deposit address
 */
 USTRUCT(BlueprintType)
-struct FVyCreateDepositAddressRequest : public FVyDTO
+struct VENLY_API FVyCreateDepositAddressRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The preferred blockchain for the deposit address*/
@@ -21,7 +21,7 @@ struct FVyCreateDepositAddressRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateDepositAddressRequestRef : public UObject
+class VENLY_API UVyCreateDepositAddressRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -40,7 +40,7 @@ class UVyCreateDepositAddressRequestRef : public UObject
 };
 //RESPONSE [DepositAddressDto]
 USTRUCT(BlueprintType)
-struct FVyCreateDepositAddressForUserIdResponse : public FVyApiResponse
+struct VENLY_API FVyCreateDepositAddressForUserIdResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyDepositAddressDto Result;

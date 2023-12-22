@@ -8,7 +8,7 @@
 * Company wallet data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyCompanyWalletDto : public FVyDTO
+struct VENLY_API FVyCompanyWalletDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the company wallet*/
@@ -27,7 +27,7 @@ struct FVyCompanyWalletDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCompanyWalletDtoRef : public UObject
+class VENLY_API UVyCompanyWalletDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

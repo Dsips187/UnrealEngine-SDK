@@ -7,7 +7,7 @@
 * DTO for storing a type and its corresponding value
 */
 USTRUCT(BlueprintType)
-struct FVyTypeValueDto : public FVyDTO
+struct VENLY_API FVyTypeValueDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the value*/
@@ -18,7 +18,7 @@ struct FVyTypeValueDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTypeValueDtoRef : public UObject
+class VENLY_API UVyTypeValueDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

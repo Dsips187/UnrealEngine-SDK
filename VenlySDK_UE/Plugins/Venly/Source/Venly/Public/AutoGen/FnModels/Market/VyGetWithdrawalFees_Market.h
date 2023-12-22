@@ -8,7 +8,7 @@
 
 //RESPONSE [WithdrawalFeeDto]
 USTRUCT(BlueprintType)
-struct FVyGetWithdrawalFeesResponse : public FVyApiResponse
+struct VENLY_API FVyGetWithdrawalFeesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWithdrawalFeeDto Result;

@@ -8,7 +8,7 @@
 
 //RESPONSE [TradingPair]
 USTRUCT(BlueprintType)
-struct FVyGetTradingPairsResponse : public FVyApiResponse
+struct VENLY_API FVyGetTradingPairsResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyTradingPairDto> Result;

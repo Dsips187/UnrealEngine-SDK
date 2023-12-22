@@ -8,7 +8,7 @@
 * Order transaction details
 */
 USTRUCT(BlueprintType)
-struct FVyOrderTransactionDto : public FVyDTO
+struct VENLY_API FVyOrderTransactionDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The hash of the transaction*/
@@ -23,7 +23,7 @@ struct FVyOrderTransactionDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOrderTransactionDtoRef : public UObject
+class VENLY_API UVyOrderTransactionDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

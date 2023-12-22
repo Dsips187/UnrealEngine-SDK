@@ -8,7 +8,7 @@
 * Data structure representing a sub user
 */
 USTRUCT(BlueprintType)
-struct FVySubUserDto : public FVyDTO
+struct VENLY_API FVySubUserDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the parent user*/
@@ -23,7 +23,7 @@ struct FVySubUserDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySubUserDtoRef : public UObject
+class VENLY_API UVySubUserDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

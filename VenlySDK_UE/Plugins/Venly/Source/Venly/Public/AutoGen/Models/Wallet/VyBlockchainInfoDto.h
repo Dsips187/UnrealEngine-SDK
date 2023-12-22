@@ -7,7 +7,7 @@
 * Blockchain information data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyBlockchainInfoDto : public FVyDTO
+struct VENLY_API FVyBlockchainInfoDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The current block number*/
@@ -20,7 +20,7 @@ struct FVyBlockchainInfoDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyBlockchainInfoDtoRef : public UObject
+class VENLY_API UVyBlockchainInfoDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

@@ -8,7 +8,7 @@
 
 //RESPONSE [ApplicationEventResult]
 USTRUCT(BlueprintType)
-struct FVyGetWalletEventsResponse : public FVyApiResponse
+struct VENLY_API FVyGetWalletEventsResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyWalletEventDto> Result;

@@ -7,7 +7,7 @@
 * An object that represents the fees associated with an offer
 */
 USTRUCT(BlueprintType)
-struct FVyOfferFeeDto : public FVyDTO
+struct VENLY_API FVyOfferFeeDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The fee charged by the market*/
@@ -20,7 +20,7 @@ struct FVyOfferFeeDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOfferFeeDtoRef : public UObject
+class VENLY_API UVyOfferFeeDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

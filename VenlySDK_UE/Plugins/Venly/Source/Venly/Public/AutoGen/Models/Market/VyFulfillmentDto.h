@@ -9,7 +9,7 @@
 * Data transfer object for a fulfillment
 */
 USTRUCT(BlueprintType)
-struct FVyFulfillmentDto : public FVyDTO
+struct VENLY_API FVyFulfillmentDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The price per item*/
@@ -40,7 +40,7 @@ struct FVyFulfillmentDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyFulfillmentDtoRef : public UObject
+class VENLY_API UVyFulfillmentDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

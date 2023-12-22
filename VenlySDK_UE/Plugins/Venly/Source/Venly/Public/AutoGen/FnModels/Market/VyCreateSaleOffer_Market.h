@@ -1,14 +1,14 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptDateTime.h"
-#include "AutoGen/Optionals/VyOptDouble.h"
-#include "AutoGen/Optionals/VyOptVisibilityType.h"
 #include "AutoGen/Models/Market/VySaleDto.h"
-#include "AutoGen/Optionals/VyOptCurrencyType.h"
-#include "AutoGen/Models/Market/VyNftDto.h"
+#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptDouble.h"
 #include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Optionals/VyOptCurrencyType.h"
+#include "AutoGen/Optionals/VyOptDateTime.h"
+#include "AutoGen/Optionals/VyOptVisibilityType.h"
+#include "AutoGen/Models/Market/VyNftDto.h"
 
 #include "VyCreateSaleOffer_Market.generated.h"
 
@@ -18,7 +18,7 @@
 * Request parameters for creating a sale offer
 */
 USTRUCT(BlueprintType)
-struct FVySaleOfferRequest : public FVyDTO
+struct VENLY_API FVySaleOfferRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The price of the sale offer*/
@@ -53,7 +53,7 @@ struct FVySaleOfferRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySaleOfferRequestRef : public UObject
+class VENLY_API UVySaleOfferRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -72,7 +72,7 @@ class UVySaleOfferRequestRef : public UObject
 };
 //RESPONSE [SaleDto]
 USTRUCT(BlueprintType)
-struct FVyCreateSaleOfferResponse : public FVyApiResponse
+struct VENLY_API FVyCreateSaleOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVySaleDto Result;

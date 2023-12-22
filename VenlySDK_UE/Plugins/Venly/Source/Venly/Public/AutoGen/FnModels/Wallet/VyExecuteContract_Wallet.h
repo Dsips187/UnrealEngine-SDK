@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Models/Wallet/VyTransactionContractExecutionRequest.h"
 #include "AutoGen/Models/Wallet/VyTransactionResultDto.h"
+#include "AutoGen/Models/Wallet/VyTransactionContractExecutionRequest.h"
 
 #include "VyExecuteContract_Wallet.generated.h"
 
@@ -12,7 +12,7 @@
 * Request parameters to execute a contract
 */
 USTRUCT(BlueprintType)
-struct FVyExecuteContractRequest : public FVyDTO
+struct VENLY_API FVyExecuteContractRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The transaction request for contract execution*/
@@ -23,7 +23,7 @@ struct FVyExecuteContractRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyExecuteContractRequestRef : public UObject
+class VENLY_API UVyExecuteContractRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -42,7 +42,7 @@ class UVyExecuteContractRequestRef : public UObject
 };
 //RESPONSE [TransactionResult]
 USTRUCT(BlueprintType)
-struct FVyExecuteContractResponse : public FVyApiResponse
+struct VENLY_API FVyExecuteContractResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTransactionResultDto Result;

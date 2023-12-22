@@ -1,8 +1,8 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Market/VyTopSellingOfferDto.h"
 #include "AutoGen/Models/Market/VyCollectionAveragePriceDto.h"
+#include "AutoGen/Models/Market/VyTopSellingOfferDto.h"
 #include "AutoGen/Models/Market/VyCollectionVolumeDto.h"
 #include "VyCollectionStatsDto.generated.h"
 
@@ -10,7 +10,7 @@
 * Collection statistics
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionStatsDto : public FVyDTO
+struct VENLY_API FVyCollectionStatsDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Top selling offer in the collection*/
@@ -29,7 +29,7 @@ struct FVyCollectionStatsDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionStatsDtoRef : public UObject
+class VENLY_API UVyCollectionStatsDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

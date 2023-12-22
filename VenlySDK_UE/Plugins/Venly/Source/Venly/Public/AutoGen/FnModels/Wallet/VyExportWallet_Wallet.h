@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Models/Wallet/VyWalletKeystoreDto.h"
 #include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Models/Wallet/VyWalletKeystoreDto.h"
 
 #include "VyExportWallet_Wallet.generated.h"
 
@@ -12,7 +12,7 @@
 * Request parameters to export a wallet
 */
 USTRUCT(BlueprintType)
-struct FVyExportWalletRequest : public FVyDTO
+struct VENLY_API FVyExportWalletRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Identifier of the wallet*/
@@ -25,7 +25,7 @@ struct FVyExportWalletRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyExportWalletRequestRef : public UObject
+class VENLY_API UVyExportWalletRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -44,7 +44,7 @@ class UVyExportWalletRequestRef : public UObject
 };
 //RESPONSE [ExportedWalletDto]
 USTRUCT(BlueprintType)
-struct FVyExportWalletResponse : public FVyApiResponse
+struct VENLY_API FVyExportWalletResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletKeystoreDto Result;

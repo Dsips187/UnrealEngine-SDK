@@ -8,7 +8,7 @@
 
 //RESPONSE [NFTCollectionDto]
 USTRUCT(BlueprintType)
-struct FVyGetCollectionResponse : public FVyApiResponse
+struct VENLY_API FVyGetCollectionResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyCollectionDto Result;

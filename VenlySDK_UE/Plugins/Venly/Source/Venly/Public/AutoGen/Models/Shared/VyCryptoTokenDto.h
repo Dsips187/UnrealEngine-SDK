@@ -7,7 +7,7 @@
 * Data transfer object for a crypto token
 */
 USTRUCT(BlueprintType)
-struct FVyCryptoTokenDto : public FVyDTO
+struct VENLY_API FVyCryptoTokenDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The address of the token*/
@@ -32,7 +32,7 @@ struct FVyCryptoTokenDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCryptoTokenDtoRef : public UObject
+class VENLY_API UVyCryptoTokenDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

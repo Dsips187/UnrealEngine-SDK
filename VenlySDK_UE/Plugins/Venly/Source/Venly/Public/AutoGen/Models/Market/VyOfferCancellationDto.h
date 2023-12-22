@@ -8,7 +8,7 @@
 * Data transfer object for offer cancellation
 */
 USTRUCT(BlueprintType)
-struct FVyOfferCancellationDto : public FVyDTO
+struct VENLY_API FVyOfferCancellationDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the cancellation*/
@@ -31,7 +31,7 @@ struct FVyOfferCancellationDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOfferCancellationDtoRef : public UObject
+class VENLY_API UVyOfferCancellationDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

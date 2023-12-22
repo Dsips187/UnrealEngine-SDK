@@ -11,7 +11,7 @@
 * Request parameters to add an offer signature
 */
 USTRUCT(BlueprintType)
-struct FVyAddOfferSignatureRequest : public FVyDTO
+struct VENLY_API FVyAddOfferSignatureRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The signature to be added*/
@@ -20,7 +20,7 @@ struct FVyAddOfferSignatureRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyAddOfferSignatureRequestRef : public UObject
+class VENLY_API UVyAddOfferSignatureRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -39,7 +39,7 @@ class UVyAddOfferSignatureRequestRef : public UObject
 };
 //RESPONSE [update_merged]
 USTRUCT(BlueprintType)
-struct FVyAddOfferSignatureResponse : public FVyApiResponse
+struct VENLY_API FVyAddOfferSignatureResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferDto Result;

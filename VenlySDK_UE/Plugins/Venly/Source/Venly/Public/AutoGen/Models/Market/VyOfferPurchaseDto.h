@@ -9,7 +9,7 @@
 * Purchase information for an offer
 */
 USTRUCT(BlueprintType)
-struct FVyOfferPurchaseDto : public FVyDTO
+struct VENLY_API FVyOfferPurchaseDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The price per item of the purchase*/
@@ -40,7 +40,7 @@ struct FVyOfferPurchaseDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOfferPurchaseDtoRef : public UObject
+class VENLY_API UVyOfferPurchaseDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

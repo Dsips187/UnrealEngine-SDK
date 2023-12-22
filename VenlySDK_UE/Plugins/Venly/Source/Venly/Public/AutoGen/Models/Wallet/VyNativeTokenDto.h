@@ -8,7 +8,7 @@
 * Data transfer object for native blockchain tokens
 */
 USTRUCT(BlueprintType)
-struct FVyNativeTokenDto : public FVyDTO
+struct VENLY_API FVyNativeTokenDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Indicates if the token is available*/
@@ -37,7 +37,7 @@ struct FVyNativeTokenDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNativeTokenDtoRef : public UObject
+class VENLY_API UVyNativeTokenDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

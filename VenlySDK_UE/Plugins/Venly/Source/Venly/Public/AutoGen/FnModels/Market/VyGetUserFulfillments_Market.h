@@ -1,13 +1,13 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptFulfillmentType.h"
+#include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Models/Market/VyFulfillmentDto.h"
+#include "AutoGen/Optionals/VyOptFulfillmentState.h"
 #include "AutoGen/Optionals/VyOptSortOrder.h"
 #include "AutoGen/Optionals/VyOptBool.h"
-#include "AutoGen/Optionals/VyOptFulfillmentState.h"
-#include "AutoGen/Models/Market/VyFulfillmentDto.h"
-#include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptFulfillmentType.h"
 
 #include "VyGetUserFulfillments_Market.generated.h"
 
@@ -16,7 +16,7 @@
 * Optional query to filter the GetUserFulfillments endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetUserFulfillments : public FVyQuery
+struct VENLY_API FVyQuery_GetUserFulfillments : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on the page number*/
@@ -39,7 +39,7 @@ struct FVyQuery_GetUserFulfillments : public FVyQuery
 
 //RESPONSE [findById_merged]
 USTRUCT(BlueprintType)
-struct FVyGetUserFulfillmentsResponse : public FVyApiResponse
+struct VENLY_API FVyGetUserFulfillmentsResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyFulfillmentDto> Result;

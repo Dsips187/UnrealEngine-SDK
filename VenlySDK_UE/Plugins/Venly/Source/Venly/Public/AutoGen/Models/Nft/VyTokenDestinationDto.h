@@ -7,7 +7,7 @@
 * A data transfer object representing a token destination
 */
 USTRUCT(BlueprintType)
-struct FVyTokenDestinationDto : public FVyDTO
+struct VENLY_API FVyTokenDestinationDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The address of the token destination*/
@@ -18,7 +18,7 @@ struct FVyTokenDestinationDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTokenDestinationDtoRef : public UObject
+class VENLY_API UVyTokenDestinationDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

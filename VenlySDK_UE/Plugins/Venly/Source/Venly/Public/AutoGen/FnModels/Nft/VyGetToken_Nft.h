@@ -8,7 +8,7 @@
 
 //RESPONSE [TokenView]
 USTRUCT(BlueprintType)
-struct FVyGetTokenResponse : public FVyApiResponse
+struct VENLY_API FVyGetTokenResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTokenDto Result;

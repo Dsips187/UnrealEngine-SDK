@@ -9,7 +9,7 @@
 * Request parameters for EIP712 request
 */
 USTRUCT(BlueprintType)
-struct FVyEip712RequestDto : public FVyDTO
+struct VENLY_API FVyEip712RequestDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Types of the EIP712 request*/
@@ -24,7 +24,7 @@ struct FVyEip712RequestDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyEip712RequestDtoRef : public UObject
+class VENLY_API UVyEip712RequestDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

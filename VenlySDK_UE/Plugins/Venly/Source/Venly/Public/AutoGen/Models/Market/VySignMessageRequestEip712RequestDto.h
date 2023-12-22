@@ -8,7 +8,7 @@
 * Request parameters to sign a message using EIP712
 */
 USTRUCT(BlueprintType)
-struct FVySignMessageRequestEip712RequestDto : public FVyDTO
+struct VENLY_API FVySignMessageRequestEip712RequestDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the wallet*/
@@ -25,7 +25,7 @@ struct FVySignMessageRequestEip712RequestDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySignMessageRequestEip712RequestDtoRef : public UObject
+class VENLY_API UVySignMessageRequestEip712RequestDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

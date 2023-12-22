@@ -8,7 +8,7 @@
 * User credit history fee information
 */
 USTRUCT(BlueprintType)
-struct FVyUserCreditHistoryFeeDto : public FVyDTO
+struct VENLY_API FVyUserCreditHistoryFeeDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the fee*/
@@ -21,7 +21,7 @@ struct FVyUserCreditHistoryFeeDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUserCreditHistoryFeeDtoRef : public UObject
+class VENLY_API UVyUserCreditHistoryFeeDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

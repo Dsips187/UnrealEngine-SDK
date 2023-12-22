@@ -1,12 +1,12 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptSortOrder.h"
-#include "AutoGen/Optionals/VyOptChain.h"
-#include "AutoGen/Optionals/VyOptBool.h"
 #include "AutoGen/Models/Market/VyCollectionDto.h"
 #include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Optionals/VyOptChain.h"
+#include "AutoGen/Optionals/VyOptSortOrder.h"
+#include "AutoGen/Optionals/VyOptBool.h"
+#include "AutoGen/Optionals/VyOptString.h"
 
 #include "VyGetCollections_Market.generated.h"
 
@@ -15,7 +15,7 @@
 * Optional query to filter the GetCollections endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetCollections : public FVyQuery
+struct VENLY_API FVyQuery_GetCollections : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on a specific ContractAddress*/
@@ -36,7 +36,7 @@ struct FVyQuery_GetCollections : public FVyQuery
 
 //RESPONSE [NFTCollectionDto]
 USTRUCT(BlueprintType)
-struct FVyGetCollectionsResponse : public FVyApiResponse
+struct VENLY_API FVyGetCollectionsResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyCollectionDto> Result;

@@ -10,7 +10,7 @@
 * Represents a credit history entry
 */
 USTRUCT(BlueprintType)
-struct FVyCreditHistoryDto : public FVyDTO
+struct VENLY_API FVyCreditHistoryDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The date of the credit history entry*/
@@ -33,7 +33,7 @@ struct FVyCreditHistoryDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreditHistoryDtoRef : public UObject
+class VENLY_API UVyCreditHistoryDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

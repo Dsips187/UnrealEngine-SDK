@@ -12,7 +12,7 @@
 * Request parameters to resubmit a transaction
 */
 USTRUCT(BlueprintType)
-struct FVyResubmitTransactionRequest : public FVyDTO
+struct VENLY_API FVyResubmitTransactionRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The preferred blockchain for the transaction*/
@@ -29,7 +29,7 @@ struct FVyResubmitTransactionRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyResubmitTransactionRequestRef : public UObject
+class VENLY_API UVyResubmitTransactionRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -48,7 +48,7 @@ class UVyResubmitTransactionRequestRef : public UObject
 };
 //RESPONSE [TransactionResult]
 USTRUCT(BlueprintType)
-struct FVyResubmitTransactionResponse : public FVyApiResponse
+struct VENLY_API FVyResubmitTransactionResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTransactionResultDto Result;

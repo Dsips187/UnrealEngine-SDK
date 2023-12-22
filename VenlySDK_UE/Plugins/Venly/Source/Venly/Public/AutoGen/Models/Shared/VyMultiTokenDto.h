@@ -1,16 +1,16 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Shared/VyMultiTokenContractDto.h"
 #include "AutoGen/Models/Shared/VyTypeValueDto.h"
 #include "AutoGen/Models/Shared/VyTokenAttributeDto.h"
+#include "AutoGen/Models/Shared/VyMultiTokenContractDto.h"
 #include "VyMultiTokenDto.generated.h"
 
 /*
 * Data transfer object for a MultiToken
 */
 USTRUCT(BlueprintType)
-struct FVyMultiTokenDto : public FVyDTO
+struct VENLY_API FVyMultiTokenDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the MultiToken*/
@@ -49,7 +49,7 @@ struct FVyMultiTokenDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMultiTokenDtoRef : public UObject
+class VENLY_API UVyMultiTokenDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

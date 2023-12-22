@@ -11,7 +11,7 @@
 * Optional query to prepare an offer transaction
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_PrepareOfferTransaction : public FVyQuery
+struct VENLY_API FVyQuery_PrepareOfferTransaction : public FVyQuery
 {
 	GENERATED_BODY();
 	/**The ID of the wallet to prepare the offer transaction for*/
@@ -20,7 +20,7 @@ struct FVyQuery_PrepareOfferTransaction : public FVyQuery
 
 //RESPONSE [OfferPreparationDto]
 USTRUCT(BlueprintType)
-struct FVyPrepareOfferTransactionResponse : public FVyApiResponse
+struct VENLY_API FVyPrepareOfferTransactionResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferPreparationDto Result;

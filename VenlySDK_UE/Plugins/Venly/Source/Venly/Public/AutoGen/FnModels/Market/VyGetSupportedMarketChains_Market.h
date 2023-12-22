@@ -8,7 +8,7 @@
 
 //RESPONSE [None]
 USTRUCT(BlueprintType)
-struct FVyGetSupportedMarketChainsResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
+struct VENLY_API FVyGetSupportedMarketChainsResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<EVyChain> Result;

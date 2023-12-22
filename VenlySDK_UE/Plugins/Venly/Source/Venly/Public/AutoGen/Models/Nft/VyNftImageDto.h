@@ -7,7 +7,7 @@
 * Data transfer object for NFT image information
 */
 USTRUCT(BlueprintType)
-struct FVyNftImageDto : public FVyDTO
+struct VENLY_API FVyNftImageDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The URL of the NFT image*/
@@ -20,7 +20,7 @@ struct FVyNftImageDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNftImageDtoRef : public UObject
+class VENLY_API UVyNftImageDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

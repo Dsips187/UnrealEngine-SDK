@@ -8,7 +8,7 @@
 
 //RESPONSE [GrantedAuthority]
 USTRUCT(BlueprintType)
-struct FVyGetRolesResponse : public FVyApiResponse
+struct VENLY_API FVyGetRolesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyRoleInfoDto> Result;

@@ -9,7 +9,7 @@
 * Details of a collection
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionDetailsDto : public FVyDTO
+struct VENLY_API FVyCollectionDetailsDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The blockchain on which the collection exists*/
@@ -40,7 +40,7 @@ struct FVyCollectionDetailsDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionDetailsDtoRef : public UObject
+class VENLY_API UVyCollectionDetailsDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

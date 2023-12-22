@@ -2,8 +2,8 @@
 
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Nft/VyContractMetadataDto.h"
 #include "AutoGen/Optionals/VyOptTypeValueArray.h"
+#include "AutoGen/Models/Nft/VyContractMetadataDto.h"
 
 #include "VyUpdateContractMetadata_Nft.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters to update contract metadata
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateContractMetadataRequest : public FVyDTO
+struct VENLY_API FVyUpdateContractMetadataRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the contract*/
@@ -36,7 +36,7 @@ struct FVyUpdateContractMetadataRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateContractMetadataRequestRef : public UObject
+class VENLY_API UVyUpdateContractMetadataRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -55,7 +55,7 @@ class UVyUpdateContractMetadataRequestRef : public UObject
 };
 //RESPONSE [TokenContractMetadataView]
 USTRUCT(BlueprintType)
-struct FVyUpdateContractMetadataResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateContractMetadataResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyContractMetadataDto Result;

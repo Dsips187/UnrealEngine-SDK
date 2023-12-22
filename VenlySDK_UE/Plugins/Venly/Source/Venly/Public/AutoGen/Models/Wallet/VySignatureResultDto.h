@@ -8,7 +8,7 @@
 * Result of a signature operation
 */
 USTRUCT(BlueprintType)
-struct FVySignatureResultDto : public FVyDTO
+struct VENLY_API FVySignatureResultDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the signature*/
@@ -31,7 +31,7 @@ struct FVySignatureResultDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySignatureResultDtoRef : public UObject
+class VENLY_API UVySignatureResultDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

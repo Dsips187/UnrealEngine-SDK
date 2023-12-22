@@ -13,7 +13,7 @@
 * Request parameters to purchase an offer
 */
 USTRUCT(BlueprintType)
-struct FVyPurchaseOfferRequest : public FVyDTO
+struct VENLY_API FVyPurchaseOfferRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**External user ID*/
@@ -34,7 +34,7 @@ struct FVyPurchaseOfferRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyPurchaseOfferRequestRef : public UObject
+class VENLY_API UVyPurchaseOfferRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -53,7 +53,7 @@ class UVyPurchaseOfferRequestRef : public UObject
 };
 //RESPONSE [PurchaseDto]
 USTRUCT(BlueprintType)
-struct FVyPurchaseOfferResponse : public FVyApiResponse
+struct VENLY_API FVyPurchaseOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferPurchaseDto Result;

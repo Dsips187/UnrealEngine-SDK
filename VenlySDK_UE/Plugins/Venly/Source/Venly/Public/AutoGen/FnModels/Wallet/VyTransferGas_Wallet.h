@@ -12,7 +12,7 @@
 * Request parameters to transfer gas
 */
 USTRUCT(BlueprintType)
-struct FVyTransferGasRequest : public FVyDTO
+struct VENLY_API FVyTransferGasRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The transaction request for gas transfer*/
@@ -23,7 +23,7 @@ struct FVyTransferGasRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTransferGasRequestRef : public UObject
+class VENLY_API UVyTransferGasRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -42,7 +42,7 @@ class UVyTransferGasRequestRef : public UObject
 };
 //RESPONSE [TransactionResult]
 USTRUCT(BlueprintType)
-struct FVyTransferGasResponse : public FVyApiResponse
+struct VENLY_API FVyTransferGasResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTransactionResultDto Result;

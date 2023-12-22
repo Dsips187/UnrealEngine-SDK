@@ -8,7 +8,7 @@
 
 //RESPONSE [findById_merged]
 USTRUCT(BlueprintType)
-struct FVyGetFulfillmentResponse : public FVyApiResponse
+struct VENLY_API FVyGetFulfillmentResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyFulfillmentDto Result;

@@ -7,7 +7,7 @@
 * Data transfer object for Eip712Domain
 */
 USTRUCT(BlueprintType)
-struct FVyEip712DomainDto : public FVyDTO
+struct VENLY_API FVyEip712DomainDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the domain*/
@@ -22,7 +22,7 @@ struct FVyEip712DomainDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyEip712DomainDtoRef : public UObject
+class VENLY_API UVyEip712DomainDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

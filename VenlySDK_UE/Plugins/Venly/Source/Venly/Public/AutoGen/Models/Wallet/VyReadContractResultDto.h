@@ -7,7 +7,7 @@
 * Result of reading a contract
 */
 USTRUCT(BlueprintType)
-struct FVyReadContractResultDto : public FVyDTO
+struct VENLY_API FVyReadContractResultDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the result*/
@@ -18,7 +18,7 @@ struct FVyReadContractResultDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyReadContractResultDtoRef : public UObject
+class VENLY_API UVyReadContractResultDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

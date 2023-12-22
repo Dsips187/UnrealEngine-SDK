@@ -8,7 +8,7 @@
 * Exchange rate information
 */
 USTRUCT(BlueprintType)
-struct FVyExchangeRateDto : public FVyDTO
+struct VENLY_API FVyExchangeRateDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The exchange platform*/
@@ -27,7 +27,7 @@ struct FVyExchangeRateDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyExchangeRateDtoRef : public UObject
+class VENLY_API UVyExchangeRateDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

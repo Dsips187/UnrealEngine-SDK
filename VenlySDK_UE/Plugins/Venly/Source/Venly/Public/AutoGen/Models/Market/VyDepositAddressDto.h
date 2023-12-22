@@ -8,7 +8,7 @@
 * Deposit address information
 */
 USTRUCT(BlueprintType)
-struct FVyDepositAddressDto : public FVyDTO
+struct VENLY_API FVyDepositAddressDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The user ID*/
@@ -23,7 +23,7 @@ struct FVyDepositAddressDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyDepositAddressDtoRef : public UObject
+class VENLY_API UVyDepositAddressDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

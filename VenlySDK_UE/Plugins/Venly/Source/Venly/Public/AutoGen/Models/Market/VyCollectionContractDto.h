@@ -8,7 +8,7 @@
 * A data transfer object representing a collection contract
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionContractDto : public FVyDTO
+struct VENLY_API FVyCollectionContractDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The address of the collection contract*/
@@ -19,7 +19,7 @@ struct FVyCollectionContractDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionContractDtoRef : public UObject
+class VENLY_API UVyCollectionContractDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Models/Market/VyOfferCancellationDto.h"
 #include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Models/Market/VyOfferCancellationDto.h"
 
 #include "VyCancelOffer_Market.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters to cancel an offer
 */
 USTRUCT(BlueprintType)
-struct FVyCancelOfferRequest : public FVyDTO
+struct VENLY_API FVyCancelOfferRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The amount to cancel*/
@@ -28,7 +28,7 @@ struct FVyCancelOfferRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCancelOfferRequestRef : public UObject
+class VENLY_API UVyCancelOfferRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -47,7 +47,7 @@ class UVyCancelOfferRequestRef : public UObject
 };
 //RESPONSE [ReimbursementDto]
 USTRUCT(BlueprintType)
-struct FVyCancelOfferResponse : public FVyApiResponse
+struct VENLY_API FVyCancelOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferCancellationDto Result;

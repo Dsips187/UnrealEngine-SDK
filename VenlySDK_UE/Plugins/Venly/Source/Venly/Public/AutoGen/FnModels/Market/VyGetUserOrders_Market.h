@@ -8,7 +8,7 @@
 
 //RESPONSE [OrderDto]
 USTRUCT(BlueprintType)
-struct FVyGetUserOrdersResponse : public FVyApiResponse
+struct VENLY_API FVyGetUserOrdersResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyOrderDto> Result;

@@ -12,7 +12,7 @@
 * Request parameters to update user preferences
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateUserPreferencesRequest : public FVyDTO
+struct VENLY_API FVyUpdateUserPreferencesRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Flag to enable or disable email notifications*/
@@ -23,7 +23,7 @@ struct FVyUpdateUserPreferencesRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateUserPreferencesRequestRef : public UObject
+class VENLY_API UVyUpdateUserPreferencesRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -42,7 +42,7 @@ class UVyUpdateUserPreferencesRequestRef : public UObject
 };
 //RESPONSE [UserPreferencesDto]
 USTRUCT(BlueprintType)
-struct FVyUpdateUserPreferencesResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateUserPreferencesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyUserPreferencesDto Result;

@@ -11,7 +11,7 @@
 * Optional query to filter the GetCreditBalances endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetCreditBalances : public FVyQuery
+struct VENLY_API FVyQuery_GetCreditBalances : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on specific currencies*/
@@ -20,7 +20,7 @@ struct FVyQuery_GetCreditBalances : public FVyQuery
 
 //RESPONSE [UserCreditBalanceDto]
 USTRUCT(BlueprintType)
-struct FVyGetCreditBalancesResponse : public FVyApiResponse
+struct VENLY_API FVyGetCreditBalancesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyUserCreditBalanceDto> Result;

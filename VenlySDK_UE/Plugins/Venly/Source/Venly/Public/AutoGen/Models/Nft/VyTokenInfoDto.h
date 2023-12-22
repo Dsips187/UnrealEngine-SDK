@@ -7,7 +7,7 @@
 * Data structure representing token information
 */
 USTRUCT(BlueprintType)
-struct FVyTokenInfoDto : public FVyDTO
+struct VENLY_API FVyTokenInfoDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The unique identifier of the token*/
@@ -28,7 +28,7 @@ struct FVyTokenInfoDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTokenInfoDtoRef : public UObject
+class VENLY_API UVyTokenInfoDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

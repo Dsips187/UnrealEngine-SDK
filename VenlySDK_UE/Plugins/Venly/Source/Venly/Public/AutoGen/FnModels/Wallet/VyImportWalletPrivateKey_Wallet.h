@@ -1,11 +1,11 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Wallet/VyWalletDto.h"
 #include "AutoGen/Optionals/VyOptWalletImportType.h"
-#include "AutoGen/Optionals/VyOptStringArray.h"
 #include "AutoGen/Optionals/VyOptWalletType.h"
+#include "AutoGen/Models/Wallet/VyWalletDto.h"
+#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptStringArray.h"
 
 #include "VyImportWalletPrivateKey_Wallet.generated.h"
 
@@ -15,7 +15,7 @@
 * Request parameters to import a private key wallet
 */
 USTRUCT(BlueprintType)
-struct FVyPrivateKeyWalletImportRequest : public FVyDTO
+struct VENLY_API FVyPrivateKeyWalletImportRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The private key of the wallet*/
@@ -32,7 +32,7 @@ struct FVyPrivateKeyWalletImportRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyPrivateKeyWalletImportRequestRef : public UObject
+class VENLY_API UVyPrivateKeyWalletImportRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -51,7 +51,7 @@ class UVyPrivateKeyWalletImportRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyImportWalletPrivateKeyResponse : public FVyApiResponse
+struct VENLY_API FVyImportWalletPrivateKeyResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

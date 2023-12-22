@@ -7,7 +7,7 @@
 * User order withdrawal maximum amount
 */
 USTRUCT(BlueprintType)
-struct FVyUserOrderWithdrawalMaxDto : public FVyDTO
+struct VENLY_API FVyUserOrderWithdrawalMaxDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The maximum withdrawal amount*/
@@ -16,7 +16,7 @@ struct FVyUserOrderWithdrawalMaxDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUserOrderWithdrawalMaxDtoRef : public UObject
+class VENLY_API UVyUserOrderWithdrawalMaxDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

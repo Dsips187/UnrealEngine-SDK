@@ -8,7 +8,7 @@
 
 //RESPONSE [Balance]
 USTRUCT(BlueprintType)
-struct FVyGetNativeBalanceByAddressResponse : public FVyApiResponse
+struct VENLY_API FVyGetNativeBalanceByAddressResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyNativeTokenDto Result;

@@ -13,7 +13,7 @@
 * Request parameters to sign a transaction
 */
 USTRUCT(BlueprintType)
-struct FVySignTransactionRequest : public FVyDTO
+struct VENLY_API FVySignTransactionRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Pincode to access the wallet*/
@@ -24,7 +24,7 @@ struct FVySignTransactionRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySignTransactionRequestRef : public UObject
+class VENLY_API UVySignTransactionRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -43,7 +43,7 @@ class UVySignTransactionRequestRef : public UObject
 };
 //RESPONSE [signTransaction_merged]
 USTRUCT(BlueprintType)
-struct FVySignTransactionResponse : public FVyApiResponse
+struct VENLY_API FVySignTransactionResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVySignatureResultDto Result;

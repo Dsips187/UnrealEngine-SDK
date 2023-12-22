@@ -11,7 +11,7 @@
 * Request parameters to add media to an NFT
 */
 USTRUCT(BlueprintType)
-struct FVyAddNftMediaRequest : public FVyDTO
+struct VENLY_API FVyAddNftMediaRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The file to be added as media to the NFT*/
@@ -20,7 +20,7 @@ struct FVyAddNftMediaRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyAddNftMediaRequestRef : public UObject
+class VENLY_API UVyAddNftMediaRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -39,7 +39,7 @@ class UVyAddNftMediaRequestRef : public UObject
 };
 //RESPONSE [UploadNftMediaResponse]
 USTRUCT(BlueprintType)
-struct FVyAddNftMediaResponse : public FVyApiResponse
+struct VENLY_API FVyAddNftMediaResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyNftMediaDto Result;

@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptSortOrder.h"
 #include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Optionals/VyOptSortOrder.h"
 #include "AutoGen/Models/Market/VyHotOfferDto.h"
 
 #include "VyFindHotOffers_Market.generated.h"
@@ -13,7 +13,7 @@
 * Optional query to filter the FindHotOffers endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_FindHotOffers : public FVyQuery
+struct VENLY_API FVyQuery_FindHotOffers : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on the page number*/
@@ -28,7 +28,7 @@ struct FVyQuery_FindHotOffers : public FVyQuery
 
 //RESPONSE [findHotOffers_object0]
 USTRUCT(BlueprintType)
-struct FVyFindHotOffersResponse : public FVyApiResponse
+struct VENLY_API FVyFindHotOffersResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyHotOfferDto> Result;

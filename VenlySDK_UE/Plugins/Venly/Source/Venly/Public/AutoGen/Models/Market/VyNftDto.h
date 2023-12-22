@@ -8,7 +8,7 @@
 * A data transfer object representing an NFT
 */
 USTRUCT(BlueprintType)
-struct FVyNftDto : public FVyDTO
+struct VENLY_API FVyNftDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The unique identifier of the NFT*/
@@ -21,7 +21,7 @@ struct FVyNftDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNftDtoRef : public UObject
+class VENLY_API UVyNftDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

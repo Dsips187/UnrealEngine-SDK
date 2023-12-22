@@ -2,8 +2,8 @@
 
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptBool.h"
 #include "AutoGen/Models/Wallet/VyWalletDto.h"
+#include "AutoGen/Optionals/VyOptBool.h"
 
 #include "VyUpdateMetadata_Wallet.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters to update wallet metadata
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateWalletMetadataRequest : public FVyDTO
+struct VENLY_API FVyUpdateWalletMetadataRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**A new description for the wallet*/
@@ -26,7 +26,7 @@ struct FVyUpdateWalletMetadataRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateWalletMetadataRequestRef : public UObject
+class VENLY_API UVyUpdateWalletMetadataRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -45,7 +45,7 @@ class UVyUpdateWalletMetadataRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyUpdateMetadataResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateMetadataResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

@@ -7,7 +7,7 @@
 * A data transfer object representing the balance of a wallet
 */
 USTRUCT(BlueprintType)
-struct FVyWalletBalanceDtoDto : public FVyDTO
+struct VENLY_API FVyWalletBalanceDtoDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The address of the wallet*/
@@ -20,7 +20,7 @@ struct FVyWalletBalanceDtoDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWalletBalanceDtoDtoRef : public UObject
+class VENLY_API UVyWalletBalanceDtoDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

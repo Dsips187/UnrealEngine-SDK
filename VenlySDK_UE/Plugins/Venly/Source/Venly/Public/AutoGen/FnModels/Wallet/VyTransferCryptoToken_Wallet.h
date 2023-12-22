@@ -12,7 +12,7 @@
 * Request parameters to transfer a crypto token
 */
 USTRUCT(BlueprintType)
-struct FVyTransferCryptoTokenRequest : public FVyDTO
+struct VENLY_API FVyTransferCryptoTokenRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The transaction request for the token transfer*/
@@ -23,7 +23,7 @@ struct FVyTransferCryptoTokenRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTransferCryptoTokenRequestRef : public UObject
+class VENLY_API UVyTransferCryptoTokenRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -42,7 +42,7 @@ class UVyTransferCryptoTokenRequestRef : public UObject
 };
 //RESPONSE [TransactionResult]
 USTRUCT(BlueprintType)
-struct FVyTransferCryptoTokenResponse : public FVyApiResponse
+struct VENLY_API FVyTransferCryptoTokenResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTransactionResultDto Result;

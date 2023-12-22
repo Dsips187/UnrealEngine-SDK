@@ -8,7 +8,7 @@
 * Trading pair details
 */
 USTRUCT(BlueprintType)
-struct FVyTradingPairDetailsDto : public FVyDTO
+struct VENLY_API FVyTradingPairDetailsDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The blockchain of the trading pair*/
@@ -25,7 +25,7 @@ struct FVyTradingPairDetailsDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTradingPairDetailsDtoRef : public UObject
+class VENLY_API UVyTradingPairDetailsDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

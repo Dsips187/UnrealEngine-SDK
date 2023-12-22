@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Models/Nft/VyPageWalletBalanceDto.h"
 #include "AutoGen/Optionals/VyOptInt.h"
+#include "AutoGen/Models/Nft/VyPageWalletBalanceDto.h"
 #include "AutoGen/Optionals/VyOptBool.h"
 
 #include "VyGetCompanyWalletByChain_Nft.generated.h"
@@ -12,7 +12,7 @@
 * Optional query to filter the GetCompanyWalletByChain endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetCompanyWalletByChain : public FVyQuery
+struct VENLY_API FVyQuery_GetCompanyWalletByChain : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on the page number*/
@@ -25,7 +25,7 @@ struct FVyQuery_GetCompanyWalletByChain : public FVyQuery
 
 //RESPONSE [PageWalletBalanceDto]
 USTRUCT(BlueprintType)
-struct FVyGetCompanyWalletByChainResponse : public FVyApiResponse
+struct VENLY_API FVyGetCompanyWalletByChainResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyPageWalletBalanceDto Result;

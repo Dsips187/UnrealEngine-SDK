@@ -3,15 +3,15 @@
 
 #include "AutoGen/Models/Market/VyBidDto.h"
 #include "AutoGen/VyEnums_generated.h"
-#include "AutoGen/Models/Market/VyUserProfileDto.h"
 #include "AutoGen/Models/Market/VyNftDetailsDto.h"
+#include "AutoGen/Models/Market/VyUserProfileDto.h"
 #include "VyOfferDto.generated.h"
 
 /*
 * A data transfer object representing an offer
 */
 USTRUCT(BlueprintType)
-struct FVyOfferDto : public FVyDTO
+struct VENLY_API FVyOfferDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The currency type of the offer*/
@@ -84,7 +84,7 @@ struct FVyOfferDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOfferDtoRef : public UObject
+class VENLY_API UVyOfferDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

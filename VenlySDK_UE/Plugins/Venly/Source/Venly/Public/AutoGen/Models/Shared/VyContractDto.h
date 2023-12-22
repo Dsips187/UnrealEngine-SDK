@@ -1,8 +1,8 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Shared/VyStorageDto.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Models/Shared/VyStorageDto.h"
 #include "AutoGen/Models/Shared/VyTypeValueDto.h"
 #include "VyContractDto.generated.h"
 
@@ -10,7 +10,7 @@
 * Data transfer object for token contract information
 */
 USTRUCT(BlueprintType)
-struct FVyContractDto : public FVyDTO
+struct VENLY_API FVyContractDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the token contract*/
@@ -49,7 +49,7 @@ struct FVyContractDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyContractDtoRef : public UObject
+class VENLY_API UVyContractDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

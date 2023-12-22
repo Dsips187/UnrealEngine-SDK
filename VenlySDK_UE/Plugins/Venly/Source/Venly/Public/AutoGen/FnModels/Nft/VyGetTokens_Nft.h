@@ -11,7 +11,7 @@
 * Optional query to filter the GetTokens endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetTokens : public FVyQuery
+struct VENLY_API FVyQuery_GetTokens : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on specific contract addresses*/
@@ -20,7 +20,7 @@ struct FVyQuery_GetTokens : public FVyQuery
 
 //RESPONSE [TokenView]
 USTRUCT(BlueprintType)
-struct FVyGetTokensResponse : public FVyApiResponse
+struct VENLY_API FVyGetTokensResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyTokenDto> Result;

@@ -1,12 +1,12 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptWalletImportType.h"
+#include "AutoGen/Optionals/VyOptWalletType.h"
 #include "AutoGen/Optionals/VyOptChain.h"
 #include "AutoGen/Models/Wallet/VyWalletDto.h"
-#include "AutoGen/Optionals/VyOptWalletImportType.h"
+#include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptStringArray.h"
-#include "AutoGen/Optionals/VyOptWalletType.h"
 
 #include "VyImportWalletMigration_Wallet.generated.h"
 
@@ -16,7 +16,7 @@
 * Request parameters for importing a wallet during migration
 */
 USTRUCT(BlueprintType)
-struct FVyMigrationWalletImportRequest : public FVyDTO
+struct VENLY_API FVyMigrationWalletImportRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Identifier of the wallet to be imported*/
@@ -35,7 +35,7 @@ struct FVyMigrationWalletImportRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMigrationWalletImportRequestRef : public UObject
+class VENLY_API UVyMigrationWalletImportRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -54,7 +54,7 @@ class UVyMigrationWalletImportRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyImportWalletMigrationResponse : public FVyApiResponse
+struct VENLY_API FVyImportWalletMigrationResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

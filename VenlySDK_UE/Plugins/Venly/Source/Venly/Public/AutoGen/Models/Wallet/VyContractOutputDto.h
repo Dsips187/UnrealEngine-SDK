@@ -7,7 +7,7 @@
 * Contract output or wallet information
 */
 USTRUCT(BlueprintType)
-struct FVyContractOutputDto : public FVyDTO
+struct VENLY_API FVyContractOutputDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the contract output or wallet*/
@@ -16,7 +16,7 @@ struct FVyContractOutputDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyContractOutputDtoRef : public UObject
+class VENLY_API UVyContractOutputDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

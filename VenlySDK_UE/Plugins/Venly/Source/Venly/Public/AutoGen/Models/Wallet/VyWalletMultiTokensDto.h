@@ -1,15 +1,15 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Shared/VyMultiTokenDto.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Models/Shared/VyMultiTokenDto.h"
 #include "VyWalletMultiTokensDto.generated.h"
 
 /*
 * A DTO representing a wallet with multiple tokens
 */
 USTRUCT(BlueprintType)
-struct FVyWalletMultiTokensDto : public FVyDTO
+struct VENLY_API FVyWalletMultiTokensDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the wallet*/
@@ -30,7 +30,7 @@ struct FVyWalletMultiTokensDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWalletMultiTokensDtoRef : public UObject
+class VENLY_API UVyWalletMultiTokensDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

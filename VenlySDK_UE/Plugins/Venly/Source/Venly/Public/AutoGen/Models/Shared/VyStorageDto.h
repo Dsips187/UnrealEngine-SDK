@@ -8,7 +8,7 @@
 * A data transfer object representing storage information
 */
 USTRUCT(BlueprintType)
-struct FVyStorageDto : public FVyDTO
+struct VENLY_API FVyStorageDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of storage*/
@@ -19,7 +19,7 @@ struct FVyStorageDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyStorageDtoRef : public UObject
+class VENLY_API UVyStorageDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

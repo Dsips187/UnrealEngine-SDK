@@ -40,7 +40,7 @@ namespace VyUtils
 	bool TryJsonValueToEnum(TSharedPtr<FJsonValue> JsonValue, EnumType& OutParam)
 	{
 		FString enumeratorValue;
-		if(JsonValue->TryGetString(enumeratorValue))
+		if (JsonValue->TryGetString(enumeratorValue))
 		{
 			return TryStringToEnum(enumeratorValue, OutParam);
 		}

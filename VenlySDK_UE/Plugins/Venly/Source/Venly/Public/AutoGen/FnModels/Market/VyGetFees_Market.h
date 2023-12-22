@@ -8,7 +8,7 @@
 
 //RESPONSE [OfferFeeDto]
 USTRUCT(BlueprintType)
-struct FVyGetFeesResponse : public FVyApiResponse
+struct VENLY_API FVyGetFeesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferFeeDto Result;

@@ -7,7 +7,7 @@
 * Data transfer object for NFT media
 */
 USTRUCT(BlueprintType)
-struct FVyNftMediaDto : public FVyDTO
+struct VENLY_API FVyNftMediaDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The media associated with the NFT*/
@@ -16,7 +16,7 @@ struct FVyNftMediaDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNftMediaDtoRef : public UObject
+class VENLY_API UVyNftMediaDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

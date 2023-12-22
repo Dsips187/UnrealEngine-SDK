@@ -7,7 +7,7 @@
 * A data transfer object representing a wallet keystore
 */
 USTRUCT(BlueprintType)
-struct FVyWalletKeystoreDto : public FVyDTO
+struct VENLY_API FVyWalletKeystoreDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The keystore of the wallet*/
@@ -16,7 +16,7 @@ struct FVyWalletKeystoreDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWalletKeystoreDtoRef : public UObject
+class VENLY_API UVyWalletKeystoreDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

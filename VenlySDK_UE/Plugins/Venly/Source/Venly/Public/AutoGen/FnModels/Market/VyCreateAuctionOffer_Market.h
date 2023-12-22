@@ -2,12 +2,12 @@
 
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptDateTime.h"
 #include "AutoGen/Optionals/VyOptDouble.h"
-#include "AutoGen/Optionals/VyOptVisibilityType.h"
-#include "AutoGen/Optionals/VyOptCurrencyType.h"
-#include "AutoGen/Models/Market/VyNftDto.h"
 #include "AutoGen/Models/Market/VyAuctionDto.h"
+#include "AutoGen/Optionals/VyOptCurrencyType.h"
+#include "AutoGen/Optionals/VyOptDateTime.h"
+#include "AutoGen/Optionals/VyOptVisibilityType.h"
+#include "AutoGen/Models/Market/VyNftDto.h"
 
 #include "VyCreateAuctionOffer_Market.generated.h"
 
@@ -17,7 +17,7 @@
 * Request parameters for making an auction offer
 */
 USTRUCT(BlueprintType)
-struct FVyAuctionOfferRequest : public FVyDTO
+struct VENLY_API FVyAuctionOfferRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The minimum bid amount for the auction*/
@@ -48,7 +48,7 @@ struct FVyAuctionOfferRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyAuctionOfferRequestRef : public UObject
+class VENLY_API UVyAuctionOfferRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -67,7 +67,7 @@ class UVyAuctionOfferRequestRef : public UObject
 };
 //RESPONSE [AuctionDto]
 USTRUCT(BlueprintType)
-struct FVyCreateAuctionOfferResponse : public FVyApiResponse
+struct VENLY_API FVyCreateAuctionOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyAuctionDto Result;

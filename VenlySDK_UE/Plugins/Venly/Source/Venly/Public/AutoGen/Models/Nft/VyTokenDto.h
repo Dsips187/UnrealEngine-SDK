@@ -1,15 +1,15 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Nft/VyTokenTypeDto.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Models/Nft/VyTokenTypeDto.h"
 #include "VyTokenDto.generated.h"
 
 /*
 * Data transfer object for a token
 */
 USTRUCT(BlueprintType)
-struct FVyTokenDto : public FVyDTO
+struct VENLY_API FVyTokenDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The blockchain on which the token exists*/
@@ -40,7 +40,7 @@ struct FVyTokenDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTokenDtoRef : public UObject
+class VENLY_API UVyTokenDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

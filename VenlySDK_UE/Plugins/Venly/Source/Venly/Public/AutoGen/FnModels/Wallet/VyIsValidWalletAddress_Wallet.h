@@ -7,7 +7,7 @@
 
 //RESPONSE [None]
 USTRUCT(BlueprintType)
-struct FVyIsValidWalletAddressResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
+struct VENLY_API FVyIsValidWalletAddressResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") bool Result;

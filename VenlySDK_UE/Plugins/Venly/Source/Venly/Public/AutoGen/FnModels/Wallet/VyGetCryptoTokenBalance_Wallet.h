@@ -8,7 +8,7 @@
 
 //RESPONSE [TokenBalance]
 USTRUCT(BlueprintType)
-struct FVyGetCryptoTokenBalanceResponse : public FVyApiResponse
+struct VENLY_API FVyGetCryptoTokenBalanceResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyCryptoTokenDto Result;

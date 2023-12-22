@@ -13,7 +13,7 @@
 * Request parameters to update token type metadata
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateTokenTypeMetadataRequest : public FVyDTO
+struct VENLY_API FVyUpdateTokenTypeMetadataRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the token type*/
@@ -38,7 +38,7 @@ struct FVyUpdateTokenTypeMetadataRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateTokenTypeMetadataRequestRef : public UObject
+class VENLY_API UVyUpdateTokenTypeMetadataRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -57,7 +57,7 @@ class UVyUpdateTokenTypeMetadataRequestRef : public UObject
 };
 //RESPONSE [#type]
 USTRUCT(BlueprintType)
-struct FVyUpdateTokenTypeMetadataResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
+struct VENLY_API FVyUpdateTokenTypeMetadataResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FString Result;

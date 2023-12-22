@@ -11,7 +11,7 @@
 * Request parameters to approve an offer transaction
 */
 USTRUCT(BlueprintType)
-struct FVyApproveOfferTxRequest : public FVyDTO
+struct VENLY_API FVyApproveOfferTxRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The hash of the transaction to approve*/
@@ -24,7 +24,7 @@ struct FVyApproveOfferTxRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyApproveOfferTxRequestRef : public UObject
+class VENLY_API UVyApproveOfferTxRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -43,7 +43,7 @@ class UVyApproveOfferTxRequestRef : public UObject
 };
 //RESPONSE [update_merged]
 USTRUCT(BlueprintType)
-struct FVyApproveOfferTxResponse : public FVyApiResponse
+struct VENLY_API FVyApproveOfferTxResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferDto Result;

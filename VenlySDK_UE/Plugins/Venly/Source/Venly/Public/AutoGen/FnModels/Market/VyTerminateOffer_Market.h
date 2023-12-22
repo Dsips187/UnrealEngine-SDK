@@ -12,7 +12,7 @@
 * Request parameters to terminate an offer
 */
 USTRUCT(BlueprintType)
-struct FVyTerminateOfferRequest : public FVyDTO
+struct VENLY_API FVyTerminateOfferRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**(read-only) The type of the request, should be "TERMINATION"*/
@@ -25,7 +25,7 @@ struct FVyTerminateOfferRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTerminateOfferRequestRef : public UObject
+class VENLY_API UVyTerminateOfferRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -44,7 +44,7 @@ class UVyTerminateOfferRequestRef : public UObject
 };
 //RESPONSE [TerminationDto]
 USTRUCT(BlueprintType)
-struct FVyTerminateOfferResponse : public FVyApiResponse
+struct VENLY_API FVyTerminateOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferTerminationDto Result;

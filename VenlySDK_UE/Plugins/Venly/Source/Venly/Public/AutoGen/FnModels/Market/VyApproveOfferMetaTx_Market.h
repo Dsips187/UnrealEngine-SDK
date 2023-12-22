@@ -11,7 +11,7 @@
 * Request parameters to approve an offer using a meta transaction
 */
 USTRUCT(BlueprintType)
-struct FVyApproveOfferMetaTxRequest : public FVyDTO
+struct VENLY_API FVyApproveOfferMetaTxRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The function signature of the offer approval transaction*/
@@ -26,7 +26,7 @@ struct FVyApproveOfferMetaTxRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyApproveOfferMetaTxRequestRef : public UObject
+class VENLY_API UVyApproveOfferMetaTxRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -45,7 +45,7 @@ class UVyApproveOfferMetaTxRequestRef : public UObject
 };
 //RESPONSE [update_merged]
 USTRUCT(BlueprintType)
-struct FVyApproveOfferMetaTxResponse : public FVyApiResponse
+struct VENLY_API FVyApproveOfferMetaTxResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferDto Result;

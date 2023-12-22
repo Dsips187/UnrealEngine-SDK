@@ -7,7 +7,7 @@
 * Top selling offer data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyTopSellingOfferDto : public FVyDTO
+struct VENLY_API FVyTopSellingOfferDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The price of the offer*/
@@ -18,7 +18,7 @@ struct FVyTopSellingOfferDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTopSellingOfferDtoRef : public UObject
+class VENLY_API UVyTopSellingOfferDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

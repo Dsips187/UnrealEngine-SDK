@@ -8,7 +8,7 @@
 
 //RESPONSE [DepositAddressDto]
 USTRUCT(BlueprintType)
-struct FVyGetDepositAddressesResponse : public FVyApiResponse
+struct VENLY_API FVyGetDepositAddressesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyDepositAddressDto> Result;

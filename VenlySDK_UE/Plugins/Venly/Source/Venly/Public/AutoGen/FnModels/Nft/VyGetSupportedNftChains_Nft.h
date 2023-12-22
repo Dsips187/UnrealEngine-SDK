@@ -8,7 +8,7 @@
 
 //RESPONSE [None]
 USTRUCT(BlueprintType)
-struct FVyGetSupportedNftChainsResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
+struct VENLY_API FVyGetSupportedNftChainsResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<EVyChain> Result;

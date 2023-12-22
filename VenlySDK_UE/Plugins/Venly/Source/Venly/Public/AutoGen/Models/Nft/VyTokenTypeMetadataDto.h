@@ -9,7 +9,7 @@
 * Token type metadata
 */
 USTRUCT(BlueprintType)
-struct FVyTokenTypeMetadataDto : public FVyDTO
+struct VENLY_API FVyTokenTypeMetadataDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the token type*/
@@ -40,7 +40,7 @@ struct FVyTokenTypeMetadataDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTokenTypeMetadataDtoRef : public UObject
+class VENLY_API UVyTokenTypeMetadataDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

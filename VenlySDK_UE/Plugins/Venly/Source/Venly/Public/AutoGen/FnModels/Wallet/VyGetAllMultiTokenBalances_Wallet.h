@@ -11,7 +11,7 @@
 * Optional query to filter the GetAllMultiTokenBalances endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetAllMultiTokenBalances : public FVyQuery
+struct VENLY_API FVyQuery_GetAllMultiTokenBalances : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on a specific Chain*/
@@ -23,7 +23,7 @@ struct FVyQuery_GetAllMultiTokenBalances : public FVyQuery
 
 //RESPONSE [WalletItemsDto]
 USTRUCT(BlueprintType)
-struct FVyGetAllMultiTokenBalancesResponse : public FVyApiResponse
+struct VENLY_API FVyGetAllMultiTokenBalancesResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyWalletMultiTokensDto> Result;

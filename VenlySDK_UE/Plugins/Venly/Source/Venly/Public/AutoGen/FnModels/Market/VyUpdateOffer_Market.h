@@ -1,11 +1,11 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Market/VyOfferDto.h"
-#include "AutoGen/Optionals/VyOptBool.h"
 #include "AutoGen/Optionals/VyOptDouble.h"
+#include "AutoGen/Optionals/VyOptBool.h"
+#include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptVisibilityType.h"
+#include "AutoGen/Models/Market/VyOfferDto.h"
 
 #include "VyUpdateOffer_Market.generated.h"
 
@@ -15,7 +15,7 @@
 * Request parameters to update an offer
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateOfferRequest : public FVyDTO
+struct VENLY_API FVyUpdateOfferRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The price of the offer*/
@@ -32,7 +32,7 @@ struct FVyUpdateOfferRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateOfferRequestRef : public UObject
+class VENLY_API UVyUpdateOfferRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -51,7 +51,7 @@ class UVyUpdateOfferRequestRef : public UObject
 };
 //RESPONSE [update_merged]
 USTRUCT(BlueprintType)
-struct FVyUpdateOfferResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateOfferResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOfferDto Result;

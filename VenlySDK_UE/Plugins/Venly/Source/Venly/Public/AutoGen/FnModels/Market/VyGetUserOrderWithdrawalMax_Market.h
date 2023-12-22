@@ -8,7 +8,7 @@
 
 //RESPONSE [UserOrderMaxWithdrawalDto]
 USTRUCT(BlueprintType)
-struct FVyGetUserOrderWithdrawalMaxResponse : public FVyApiResponse
+struct VENLY_API FVyGetUserOrderWithdrawalMaxResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyUserOrderWithdrawalMaxDto Result;

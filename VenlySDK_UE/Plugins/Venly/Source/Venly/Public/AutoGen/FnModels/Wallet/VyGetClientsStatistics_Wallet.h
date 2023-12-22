@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptStringArray.h"
 #include "AutoGen/Models/Wallet/VyClientStatisticsDto.h"
+#include "AutoGen/Optionals/VyOptStringArray.h"
 
 #include "VyGetClientsStatistics_Wallet.generated.h"
 
@@ -11,7 +11,7 @@
 * Optional query to filter the GetClientsStatistics endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetClientsStatistics : public FVyQuery
+struct VENLY_API FVyQuery_GetClientsStatistics : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on specific client IDs*/
@@ -20,7 +20,7 @@ struct FVyQuery_GetClientsStatistics : public FVyQuery
 
 //RESPONSE [ClientsStatisticsDto]
 USTRUCT(BlueprintType)
-struct FVyGetClientsStatisticsResponse : public FVyApiResponse
+struct VENLY_API FVyGetClientsStatisticsResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyClientStatisticsDto Result;

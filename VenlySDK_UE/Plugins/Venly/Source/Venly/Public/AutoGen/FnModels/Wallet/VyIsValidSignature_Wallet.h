@@ -12,7 +12,7 @@
 * Request parameters for signature verification
 */
 USTRUCT(BlueprintType)
-struct FVySignatureVerificationRequest : public FVyDTO
+struct VENLY_API FVySignatureVerificationRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The blockchain on which the signature was created*/
@@ -33,7 +33,7 @@ struct FVySignatureVerificationRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySignatureVerificationRequestRef : public UObject
+class VENLY_API UVySignatureVerificationRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -52,7 +52,7 @@ class UVySignatureVerificationRequestRef : public UObject
 };
 //RESPONSE [#type]
 USTRUCT(BlueprintType)
-struct FVyIsValidSignatureResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
+struct VENLY_API FVyIsValidSignatureResponse : public FVyApiResponse, public FVyResponseTrait_VariantResult
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") bool Result;

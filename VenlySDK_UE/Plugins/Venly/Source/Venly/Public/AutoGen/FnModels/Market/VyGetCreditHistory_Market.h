@@ -1,10 +1,10 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptSortOrder.h"
 #include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptInt.h"
 #include "AutoGen/Models/Market/VyCreditHistoryDto.h"
+#include "AutoGen/Optionals/VyOptSortOrder.h"
 
 #include "VyGetCreditHistory_Market.generated.h"
 
@@ -13,7 +13,7 @@
 * Optional query to filter the GetCreditHistory endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetCreditHistory : public FVyQuery
+struct VENLY_API FVyQuery_GetCreditHistory : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on the page number*/
@@ -32,7 +32,7 @@ struct FVyQuery_GetCreditHistory : public FVyQuery
 
 //RESPONSE [getCreditHistory_object0]
 USTRUCT(BlueprintType)
-struct FVyGetCreditHistoryResponse : public FVyApiResponse
+struct VENLY_API FVyGetCreditHistoryResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyCreditHistoryDto Result;

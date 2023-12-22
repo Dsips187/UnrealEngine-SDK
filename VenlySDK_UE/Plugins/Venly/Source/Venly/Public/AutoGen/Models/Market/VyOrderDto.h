@@ -9,7 +9,7 @@
 * Represents an order
 */
 USTRUCT(BlueprintType)
-struct FVyOrderDto : public FVyDTO
+struct VENLY_API FVyOrderDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The unique identifier of the order*/
@@ -38,7 +38,7 @@ struct FVyOrderDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOrderDtoRef : public UObject
+class VENLY_API UVyOrderDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

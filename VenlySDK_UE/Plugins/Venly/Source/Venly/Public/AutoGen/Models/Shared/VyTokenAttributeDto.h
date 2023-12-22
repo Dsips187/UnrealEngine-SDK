@@ -8,7 +8,7 @@
 * Data structure representing a token attribute
 */
 USTRUCT(BlueprintType)
-struct FVyTokenAttributeDto : public FVyDTO
+struct VENLY_API FVyTokenAttributeDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the token attribute*/
@@ -27,7 +27,7 @@ struct FVyTokenAttributeDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTokenAttributeDtoRef : public UObject
+class VENLY_API UVyTokenAttributeDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

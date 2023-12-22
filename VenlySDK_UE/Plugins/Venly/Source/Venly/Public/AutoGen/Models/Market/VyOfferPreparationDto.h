@@ -8,7 +8,7 @@
 * Offer preparation data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyOfferPreparationDto : public FVyDTO
+struct VENLY_API FVyOfferPreparationDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Array of approval preparation transactions*/
@@ -19,7 +19,7 @@ struct FVyOfferPreparationDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyOfferPreparationDtoRef : public UObject
+class VENLY_API UVyOfferPreparationDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

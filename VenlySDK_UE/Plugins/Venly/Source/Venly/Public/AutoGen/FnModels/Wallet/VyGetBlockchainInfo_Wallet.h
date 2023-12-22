@@ -8,7 +8,7 @@
 
 //RESPONSE [BlockchainInfoDto]
 USTRUCT(BlueprintType)
-struct FVyGetBlockchainInfoResponse : public FVyApiResponse
+struct VENLY_API FVyGetBlockchainInfoResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyBlockchainInfoDto Result;

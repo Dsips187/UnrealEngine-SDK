@@ -8,7 +8,7 @@
 * Data transfer object for a multi-token contract
 */
 USTRUCT(BlueprintType)
-struct FVyMultiTokenContractDto : public FVyDTO
+struct VENLY_API FVyMultiTokenContractDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the multi-token contract*/
@@ -39,7 +39,7 @@ struct FVyMultiTokenContractDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMultiTokenContractDtoRef : public UObject
+class VENLY_API UVyMultiTokenContractDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

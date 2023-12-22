@@ -8,7 +8,7 @@
 * A reference data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyReferenceDto : public FVyDTO
+struct VENLY_API FVyReferenceDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The identifier of the reference*/
@@ -19,7 +19,7 @@ struct FVyReferenceDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyReferenceDtoRef : public UObject
+class VENLY_API UVyReferenceDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

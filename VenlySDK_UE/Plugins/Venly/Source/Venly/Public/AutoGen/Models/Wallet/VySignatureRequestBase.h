@@ -8,7 +8,7 @@
 * Base class for signature requests
 */
 USTRUCT(BlueprintType)
-struct FVySignatureRequestBase : public FVyDTO
+struct VENLY_API FVySignatureRequestBase : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The preferred blockchain for the signature*/
@@ -19,7 +19,7 @@ struct FVySignatureRequestBase : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySignatureRequestBaseRef : public UObject
+class VENLY_API UVySignatureRequestBaseRef : public UObject
 {
 	GENERATED_BODY()
 	public:

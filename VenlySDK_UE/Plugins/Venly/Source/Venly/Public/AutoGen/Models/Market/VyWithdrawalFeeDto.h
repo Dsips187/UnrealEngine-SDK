@@ -7,7 +7,7 @@
 * Withdrawal fee information
 */
 USTRUCT(BlueprintType)
-struct FVyWithdrawalFeeDto : public FVyDTO
+struct VENLY_API FVyWithdrawalFeeDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The minimum withdrawal fee*/
@@ -18,7 +18,7 @@ struct FVyWithdrawalFeeDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWithdrawalFeeDtoRef : public UObject
+class VENLY_API UVyWithdrawalFeeDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

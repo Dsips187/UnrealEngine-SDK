@@ -7,7 +7,7 @@
 * Data transfer object for transaction result
 */
 USTRUCT(BlueprintType)
-struct FVyTransactionResultDto : public FVyDTO
+struct VENLY_API FVyTransactionResultDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Hash of the transaction*/
@@ -18,7 +18,7 @@ struct FVyTransactionResultDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTransactionResultDtoRef : public UObject
+class VENLY_API UVyTransactionResultDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

@@ -1,9 +1,9 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Market/VyCollectionStatsDto.h"
-#include "AutoGen/Models/Market/VyCollectionContractDto.h"
 #include "AutoGen/Models/Market/VyCollectionSocialDto.h"
+#include "AutoGen/Models/Market/VyCollectionContractDto.h"
+#include "AutoGen/Models/Market/VyCollectionStatsDto.h"
 #include "AutoGen/VyEnums_generated.h"
 #include "VyCollectionDto.generated.h"
 
@@ -11,7 +11,7 @@
 * A data transfer object representing a collection
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionDto : public FVyDTO
+struct VENLY_API FVyCollectionDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The public identifier of the collection*/
@@ -46,7 +46,7 @@ struct FVyCollectionDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionDtoRef : public UObject
+class VENLY_API UVyCollectionDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

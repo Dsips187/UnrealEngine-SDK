@@ -3,15 +3,15 @@
 
 #include "AutoGen/Models/Market/VyBidDto.h"
 #include "AutoGen/VyEnums_generated.h"
-#include "AutoGen/Models/Market/VyUserProfileDto.h"
 #include "AutoGen/Models/Market/VyNftDetailsDto.h"
+#include "AutoGen/Models/Market/VyUserProfileDto.h"
 #include "VyAuctionDto.generated.h"
 
 /*
 * Auction details
 */
 USTRUCT(BlueprintType)
-struct FVyAuctionDto : public FVyDTO
+struct VENLY_API FVyAuctionDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The minimum bid amount*/
@@ -76,7 +76,7 @@ struct FVyAuctionDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyAuctionDtoRef : public UObject
+class VENLY_API UVyAuctionDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

@@ -7,7 +7,7 @@
 * A data transfer object representing the destination of a minted token
 */
 USTRUCT(BlueprintType)
-struct FVyMintedTokenDestinationDto : public FVyDTO
+struct VENLY_API FVyMintedTokenDestinationDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The destination of the minted token*/
@@ -20,7 +20,7 @@ struct FVyMintedTokenDestinationDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMintedTokenDestinationDtoRef : public UObject
+class VENLY_API UVyMintedTokenDestinationDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

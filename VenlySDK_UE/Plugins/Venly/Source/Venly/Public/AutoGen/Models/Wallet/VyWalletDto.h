@@ -9,7 +9,7 @@
 * Data structure representing a wallet
 */
 USTRUCT(BlueprintType)
-struct FVyWalletDto : public FVyDTO
+struct VENLY_API FVyWalletDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The unique identifier of the wallet*/
@@ -42,7 +42,7 @@ struct FVyWalletDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyWalletDtoRef : public UObject
+class VENLY_API UVyWalletDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

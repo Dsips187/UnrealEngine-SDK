@@ -11,7 +11,7 @@
 
 //RESPONSE [DepositAddressDto]
 USTRUCT(BlueprintType)
-struct FVyCreateDepositAddressResponse : public FVyApiResponse
+struct VENLY_API FVyCreateDepositAddressResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyDepositAddressDto Result;

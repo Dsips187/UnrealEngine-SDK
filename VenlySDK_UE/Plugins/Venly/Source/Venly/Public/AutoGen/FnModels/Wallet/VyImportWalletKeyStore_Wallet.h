@@ -1,11 +1,11 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Wallet/VyWalletDto.h"
 #include "AutoGen/Optionals/VyOptWalletImportType.h"
-#include "AutoGen/Optionals/VyOptStringArray.h"
 #include "AutoGen/Optionals/VyOptWalletType.h"
+#include "AutoGen/Models/Wallet/VyWalletDto.h"
+#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptStringArray.h"
 
 #include "VyImportWalletKeyStore_Wallet.generated.h"
 
@@ -15,7 +15,7 @@
 * Request parameters to import a wallet using a keystore file and password
 */
 USTRUCT(BlueprintType)
-struct FVyKeystorePasswordWalletImportRequest : public FVyDTO
+struct VENLY_API FVyKeystorePasswordWalletImportRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The keystore file contents*/
@@ -34,7 +34,7 @@ struct FVyKeystorePasswordWalletImportRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyKeystorePasswordWalletImportRequestRef : public UObject
+class VENLY_API UVyKeystorePasswordWalletImportRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -53,7 +53,7 @@ class UVyKeystorePasswordWalletImportRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyImportWalletKeyStoreResponse : public FVyApiResponse
+struct VENLY_API FVyImportWalletKeyStoreResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

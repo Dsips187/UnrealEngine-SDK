@@ -3,8 +3,8 @@
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/VyEnums_generated.h"
-#include "AutoGen/Optionals/VyOptChain.h"
 #include "AutoGen/Models/Market/VyOrderDto.h"
+#include "AutoGen/Optionals/VyOptChain.h"
 
 #include "VyCreateOrder_Market.generated.h"
 
@@ -14,7 +14,7 @@
 * Request parameters to create an order
 */
 USTRUCT(BlueprintType)
-struct FVyCreateOrderRequest : public FVyDTO
+struct VENLY_API FVyCreateOrderRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Identifier of the user*/
@@ -35,7 +35,7 @@ struct FVyCreateOrderRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateOrderRequestRef : public UObject
+class VENLY_API UVyCreateOrderRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -54,7 +54,7 @@ class UVyCreateOrderRequestRef : public UObject
 };
 //RESPONSE [OrderDto]
 USTRUCT(BlueprintType)
-struct FVyCreateOrderResponse : public FVyApiResponse
+struct VENLY_API FVyCreateOrderResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyOrderDto Result;

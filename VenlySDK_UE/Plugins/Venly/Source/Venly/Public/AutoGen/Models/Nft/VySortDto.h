@@ -7,7 +7,7 @@
 * A data transfer object for sorting options
 */
 USTRUCT(BlueprintType)
-struct FVySortDto : public FVyDTO
+struct VENLY_API FVySortDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Indicates if the sorting option is set to 'Empty'*/
@@ -20,7 +20,7 @@ struct FVySortDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVySortDtoRef : public UObject
+class VENLY_API UVySortDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

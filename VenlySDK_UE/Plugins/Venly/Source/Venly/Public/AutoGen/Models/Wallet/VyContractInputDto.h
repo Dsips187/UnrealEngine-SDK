@@ -7,7 +7,7 @@
 * Data transfer object for contract input
 */
 USTRUCT(BlueprintType)
-struct FVyContractInputDto : public FVyDTO
+struct VENLY_API FVyContractInputDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The type of the contract input*/
@@ -18,7 +18,7 @@ struct FVyContractInputDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyContractInputDtoRef : public UObject
+class VENLY_API UVyContractInputDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

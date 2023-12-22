@@ -1,12 +1,12 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Models/Market/VyOfferDto.h"
-#include "AutoGen/Optionals/VyOptSortOrder.h"
+#include "AutoGen/Optionals/VyOptRelationType.h"
 #include "AutoGen/Optionals/VyOptInt.h"
 #include "AutoGen/Optionals/VyOptBool.h"
-#include "AutoGen/Optionals/VyOptRelationType.h"
+#include "AutoGen/Optionals/VyOptSortOrder.h"
+#include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptStringArray.h"
 
 #include "VyGetUserOffers_Market.generated.h"
@@ -16,7 +16,7 @@
 * Optional query to filter the GetUserOffers endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetUserOffers : public FVyQuery
+struct VENLY_API FVyQuery_GetUserOffers : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on the page number*/
@@ -43,7 +43,7 @@ struct FVyQuery_GetUserOffers : public FVyQuery
 
 //RESPONSE [update_merged]
 USTRUCT(BlueprintType)
-struct FVyGetUserOffersResponse : public FVyApiResponse
+struct VENLY_API FVyGetUserOffersResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyOfferDto> Result;

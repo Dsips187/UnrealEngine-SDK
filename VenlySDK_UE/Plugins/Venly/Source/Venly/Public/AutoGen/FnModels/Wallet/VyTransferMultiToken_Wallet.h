@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Models/Wallet/VyMultiTokenTransactionRequest.h"
 #include "AutoGen/Models/Wallet/VyTransactionResultDto.h"
+#include "AutoGen/Models/Wallet/VyMultiTokenTransactionRequest.h"
 
 #include "VyTransferMultiToken_Wallet.generated.h"
 
@@ -12,7 +12,7 @@
 * Request parameters to transfer a MultiToken
 */
 USTRUCT(BlueprintType)
-struct FVyTransferMultiTokenRequest : public FVyDTO
+struct VENLY_API FVyTransferMultiTokenRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The transaction request for the MultiToken transfer*/
@@ -23,7 +23,7 @@ struct FVyTransferMultiTokenRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyTransferMultiTokenRequestRef : public UObject
+class VENLY_API UVyTransferMultiTokenRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -42,7 +42,7 @@ class UVyTransferMultiTokenRequestRef : public UObject
 };
 //RESPONSE [TransactionResult]
 USTRUCT(BlueprintType)
-struct FVyTransferMultiTokenResponse : public FVyApiResponse
+struct VENLY_API FVyTransferMultiTokenResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTransactionResultDto Result;

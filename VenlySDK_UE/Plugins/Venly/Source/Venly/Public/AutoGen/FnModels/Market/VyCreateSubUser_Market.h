@@ -2,8 +2,8 @@
 
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Models/Market/VySubUserDto.h"
 #include "AutoGen/Optionals/VyOptUserType.h"
+#include "AutoGen/Models/Market/VySubUserDto.h"
 
 #include "VyCreateSubUser_Market.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters to create a sub user
 */
 USTRUCT(BlueprintType)
-struct FVyCreateSubUserRequest : public FVyDTO
+struct VENLY_API FVyCreateSubUserRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Nickname of the sub user*/
@@ -24,7 +24,7 @@ struct FVyCreateSubUserRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateSubUserRequestRef : public UObject
+class VENLY_API UVyCreateSubUserRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -43,7 +43,7 @@ class UVyCreateSubUserRequestRef : public UObject
 };
 //RESPONSE [SubUserDto]
 USTRUCT(BlueprintType)
-struct FVyCreateSubUserResponse : public FVyApiResponse
+struct VENLY_API FVyCreateSubUserResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVySubUserDto Result;

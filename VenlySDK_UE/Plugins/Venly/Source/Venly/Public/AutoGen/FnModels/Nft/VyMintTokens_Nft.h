@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Models/Nft/VyTokenDestinationDto.h"
 #include "AutoGen/Models/Nft/VyMintedTokensDto.h"
+#include "AutoGen/Models/Nft/VyTokenDestinationDto.h"
 
 #include "VyMintTokens_Nft.generated.h"
 
@@ -12,7 +12,7 @@
 * Request parameters to mint tokens
 */
 USTRUCT(BlueprintType)
-struct FVyMintTokensRequest : public FVyDTO
+struct VENLY_API FVyMintTokensRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**An array of token destinations*/
@@ -21,7 +21,7 @@ struct FVyMintTokensRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyMintTokensRequestRef : public UObject
+class VENLY_API UVyMintTokensRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -40,7 +40,7 @@ class UVyMintTokensRequestRef : public UObject
 };
 //RESPONSE [MintTokenResponse]
 USTRUCT(BlueprintType)
-struct FVyMintTokensResponse : public FVyApiResponse
+struct VENLY_API FVyMintTokensResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyMintedTokensDto> Result;

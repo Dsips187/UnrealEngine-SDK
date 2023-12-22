@@ -8,7 +8,7 @@
 * Contract metadata information
 */
 USTRUCT(BlueprintType)
-struct FVyContractMetadataDto : public FVyDTO
+struct VENLY_API FVyContractMetadataDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the contract*/
@@ -33,7 +33,7 @@ struct FVyContractMetadataDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyContractMetadataDtoRef : public UObject
+class VENLY_API UVyContractMetadataDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

@@ -1,16 +1,16 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
+#include "AutoGen/Models/Market/VyNftDetailsDto.h"
 #include "AutoGen/VyEnums_generated.h"
 #include "AutoGen/Models/Market/VyUserProfileDto.h"
-#include "AutoGen/Models/Market/VyNftDetailsDto.h"
 #include "VyHotOfferDto.generated.h"
 
 /*
 * Data structure representing a hot offer
 */
 USTRUCT(BlueprintType)
-struct FVyHotOfferDto : public FVyDTO
+struct VENLY_API FVyHotOfferDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The unique identifier of the hot offer*/
@@ -67,7 +67,7 @@ struct FVyHotOfferDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyHotOfferDtoRef : public UObject
+class VENLY_API UVyHotOfferDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

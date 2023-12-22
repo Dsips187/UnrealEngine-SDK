@@ -7,7 +7,7 @@
 * Client statistics data
 */
 USTRUCT(BlueprintType)
-struct FVyClientStatisticsDto : public FVyDTO
+struct VENLY_API FVyClientStatisticsDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The number of wallets*/
@@ -18,7 +18,7 @@ struct FVyClientStatisticsDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyClientStatisticsDtoRef : public UObject
+class VENLY_API UVyClientStatisticsDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

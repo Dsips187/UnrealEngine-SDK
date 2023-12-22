@@ -11,5 +11,6 @@ public class VenlySDK_UETarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V4;
 
 		ExtraModuleNames.AddRange( new string[] { "VenlySDK_UE" } );
+		ExtraModuleNames.Add("Venly");
 	}
 }

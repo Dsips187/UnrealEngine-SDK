@@ -7,7 +7,7 @@
 * Data transfer object for an EIP712 message
 */
 USTRUCT(BlueprintType)
-struct FVyEip712MessageDto : public FVyDTO
+struct VENLY_API FVyEip712MessageDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The nonce value*/
@@ -20,7 +20,7 @@ struct FVyEip712MessageDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyEip712MessageDtoRef : public UObject
+class VENLY_API UVyEip712MessageDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

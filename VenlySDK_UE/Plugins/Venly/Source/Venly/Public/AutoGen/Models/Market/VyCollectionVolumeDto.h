@@ -7,7 +7,7 @@
 * A data transfer object representing the volume of a collection
 */
 USTRUCT(BlueprintType)
-struct FVyCollectionVolumeDto : public FVyDTO
+struct VENLY_API FVyCollectionVolumeDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The volume of the collection in the last 7 days*/
@@ -22,7 +22,7 @@ struct FVyCollectionVolumeDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCollectionVolumeDtoRef : public UObject
+class VENLY_API UVyCollectionVolumeDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

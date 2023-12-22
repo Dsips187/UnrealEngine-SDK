@@ -1,12 +1,12 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptChain.h"
-#include "AutoGen/Optionals/VyOptBool.h"
 #include "AutoGen/Optionals/VyOptStorage.h"
 #include "AutoGen/Models/Shared/VyContractDto.h"
+#include "AutoGen/Optionals/VyOptChain.h"
+#include "AutoGen/Optionals/VyOptBool.h"
 #include "AutoGen/Optionals/VyOptTypeValueArray.h"
+#include "AutoGen/Optionals/VyOptString.h"
 
 #include "VyCreateContract_Nft.generated.h"
 
@@ -16,7 +16,7 @@
 * Request parameters to create a contract
 */
 USTRUCT(BlueprintType)
-struct FVyCreateContractRequest : public FVyDTO
+struct VENLY_API FVyCreateContractRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The name of the contract*/
@@ -47,7 +47,7 @@ struct FVyCreateContractRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateContractRequestRef : public UObject
+class VENLY_API UVyCreateContractRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -66,7 +66,7 @@ class UVyCreateContractRequestRef : public UObject
 };
 //RESPONSE [TokenContractView]
 USTRUCT(BlueprintType)
-struct FVyCreateContractResponse : public FVyApiResponse
+struct VENLY_API FVyCreateContractResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyContractDto Result;

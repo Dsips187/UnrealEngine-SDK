@@ -7,7 +7,7 @@
 * Role information data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyRoleInfoDto : public FVyDTO
+struct VENLY_API FVyRoleInfoDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The authority of the role*/
@@ -16,7 +16,7 @@ struct FVyRoleInfoDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyRoleInfoDtoRef : public UObject
+class VENLY_API UVyRoleInfoDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

@@ -2,8 +2,8 @@
 
 #include "Models/VyCoreModels.h"
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptBool.h"
 #include "AutoGen/Models/Wallet/VyWalletDto.h"
+#include "AutoGen/Optionals/VyOptBool.h"
 
 #include "VyUpdateSecurity_Wallet.generated.h"
 
@@ -13,7 +13,7 @@
 * Request parameters to update the security settings of a wallet
 */
 USTRUCT(BlueprintType)
-struct FVyUpdateWalletSecurityRequest : public FVyDTO
+struct VENLY_API FVyUpdateWalletSecurityRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Current pincode of the wallet*/
@@ -28,7 +28,7 @@ struct FVyUpdateWalletSecurityRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUpdateWalletSecurityRequestRef : public UObject
+class VENLY_API UVyUpdateWalletSecurityRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -47,7 +47,7 @@ class UVyUpdateWalletSecurityRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyUpdateSecurityResponse : public FVyApiResponse
+struct VENLY_API FVyUpdateSecurityResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

@@ -8,7 +8,7 @@
 * User credit balance information
 */
 USTRUCT(BlueprintType)
-struct FVyUserCreditBalanceDto : public FVyDTO
+struct VENLY_API FVyUserCreditBalanceDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The currency type of the balance*/
@@ -21,7 +21,7 @@ struct FVyUserCreditBalanceDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUserCreditBalanceDtoRef : public UObject
+class VENLY_API UVyUserCreditBalanceDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

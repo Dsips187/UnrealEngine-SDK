@@ -2,8 +2,8 @@
 #include "Models/VyCoreModels.h"
 
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptNetwork.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Optionals/VyOptNetwork.h"
 #include "AutoGen/Optionals/VyOptDouble.h"
 #include "VyNativeTokenTransactionRequest.generated.h"
 
@@ -11,7 +11,7 @@
 * Request parameters for a native token transaction
 */
 USTRUCT(BlueprintType)
-struct FVyNativeTokenTransactionRequest : public FVyDTO
+struct VENLY_API FVyNativeTokenTransactionRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the wallet*/
@@ -38,7 +38,7 @@ struct FVyNativeTokenTransactionRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNativeTokenTransactionRequestRef : public UObject
+class VENLY_API UVyNativeTokenTransactionRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:

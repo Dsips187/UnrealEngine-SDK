@@ -10,7 +10,7 @@
 * Page information and wallet balances
 */
 USTRUCT(BlueprintType)
-struct FVyPageWalletBalanceDto : public FVyDTO
+struct VENLY_API FVyPageWalletBalanceDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Total number of pages*/
@@ -39,7 +39,7 @@ struct FVyPageWalletBalanceDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyPageWalletBalanceDtoRef : public UObject
+class VENLY_API UVyPageWalletBalanceDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

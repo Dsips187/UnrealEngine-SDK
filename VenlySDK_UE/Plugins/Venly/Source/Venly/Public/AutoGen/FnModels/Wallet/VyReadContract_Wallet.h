@@ -1,10 +1,10 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptContractInputArray.h"
-#include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Optionals/VyOptContractInputArray.h"
 #include "AutoGen/Models/Wallet/VyReadContractResultDto.h"
+#include "AutoGen/Optionals/VyOptString.h"
 #include "AutoGen/Optionals/VyOptContractOutputArray.h"
 
 #include "VyReadContract_Wallet.generated.h"
@@ -15,7 +15,7 @@
 * Request parameters to read a contract
 */
 USTRUCT(BlueprintType)
-struct FVyReadContractRequest : public FVyDTO
+struct VENLY_API FVyReadContractRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The preferred blockchain for the contract*/
@@ -38,7 +38,7 @@ struct FVyReadContractRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyReadContractRequestRef : public UObject
+class VENLY_API UVyReadContractRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -57,7 +57,7 @@ class UVyReadContractRequestRef : public UObject
 };
 //RESPONSE [ContractReadResult]
 USTRUCT(BlueprintType)
-struct FVyReadContractResponse : public FVyApiResponse
+struct VENLY_API FVyReadContractResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyReadContractResultDto> Result;

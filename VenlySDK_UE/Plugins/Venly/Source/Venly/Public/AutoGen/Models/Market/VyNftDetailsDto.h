@@ -1,8 +1,8 @@
 #pragma once
 #include "Models/VyCoreModels.h"
 
-#include "AutoGen/Models/Market/VyCollectionDetailsDto.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Models/Market/VyCollectionDetailsDto.h"
 #include "AutoGen/Models/Shared/VyTypeValueDto.h"
 #include "AutoGen/Models/Shared/VyTokenAttributeDto.h"
 #include "VyNftDetailsDto.generated.h"
@@ -11,7 +11,7 @@
 * Details of an NFT
 */
 USTRUCT(BlueprintType)
-struct FVyNftDetailsDto : public FVyDTO
+struct VENLY_API FVyNftDetailsDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the NFT*/
@@ -50,7 +50,7 @@ struct FVyNftDetailsDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyNftDetailsDtoRef : public UObject
+class VENLY_API UVyNftDetailsDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

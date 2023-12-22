@@ -11,7 +11,7 @@
 * Optional query to filter the GetMultiTokenBalancesByAddress endpoint results
 */
 USTRUCT(BlueprintType)
-struct FVyQuery_GetMultiTokenBalancesByAddress : public FVyQuery
+struct VENLY_API FVyQuery_GetMultiTokenBalancesByAddress : public FVyQuery
 {
 	GENERATED_BODY();
 	/**Filter based on specific contract addresses*/
@@ -20,7 +20,7 @@ struct FVyQuery_GetMultiTokenBalancesByAddress : public FVyQuery
 
 //RESPONSE [NonFungibleAssetBalance]
 USTRUCT(BlueprintType)
-struct FVyGetMultiTokenBalancesByAddressResponse : public FVyApiResponse
+struct VENLY_API FVyGetMultiTokenBalancesByAddressResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") TArray<FVyMultiTokenDto> Result;

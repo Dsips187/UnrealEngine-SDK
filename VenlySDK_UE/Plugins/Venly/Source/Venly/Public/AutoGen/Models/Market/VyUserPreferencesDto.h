@@ -7,7 +7,7 @@
 * User preferences
 */
 USTRUCT(BlueprintType)
-struct FVyUserPreferencesDto : public FVyDTO
+struct VENLY_API FVyUserPreferencesDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Flag indicating whether email notifications are enabled*/
@@ -18,7 +18,7 @@ struct FVyUserPreferencesDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyUserPreferencesDtoRef : public UObject
+class VENLY_API UVyUserPreferencesDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

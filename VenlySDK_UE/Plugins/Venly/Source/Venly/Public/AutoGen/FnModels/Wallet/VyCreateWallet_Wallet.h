@@ -13,7 +13,7 @@
 * Request parameters to create a wallet
 */
 USTRUCT(BlueprintType)
-struct FVyCreateWalletRequest : public FVyDTO
+struct VENLY_API FVyCreateWalletRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Identifier of the wallet*/
@@ -34,7 +34,7 @@ struct FVyCreateWalletRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateWalletRequestRef : public UObject
+class VENLY_API UVyCreateWalletRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -53,7 +53,7 @@ class UVyCreateWalletRequestRef : public UObject
 };
 //RESPONSE [ViewWalletResult]
 USTRUCT(BlueprintType)
-struct FVyCreateWalletResponse : public FVyApiResponse
+struct VENLY_API FVyCreateWalletResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyWalletDto Result;

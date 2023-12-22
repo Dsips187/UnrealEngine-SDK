@@ -1,14 +1,14 @@
 #pragma once
 
 #include "Models/VyCoreModels.h"
-#include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptBool.h"
-#include "AutoGen/Optionals/VyOptTokenDestinationArray.h"
-#include "AutoGen/Models/Nft/VyTokenTypeDto.h"
 #include "AutoGen/Optionals/VyOptStorage.h"
-#include "AutoGen/Optionals/VyOptTokenAttributeArray.h"
+#include "AutoGen/Models/Nft/VyTokenTypeDto.h"
+#include "AutoGen/Optionals/VyOptTokenDestinationArray.h"
 #include "AutoGen/Optionals/VyOptInt.h"
 #include "AutoGen/Optionals/VyOptTypeValueArray.h"
+#include "AutoGen/Optionals/VyOptBool.h"
+#include "AutoGen/Optionals/VyOptString.h"
+#include "AutoGen/Optionals/VyOptTokenAttributeArray.h"
 
 #include "VyCreateTokenType_Nft.generated.h"
 
@@ -18,7 +18,7 @@
 * Request parameters to create a token type
 */
 USTRUCT(BlueprintType)
-struct FVyCreateTokenTypeRequest : public FVyDTO
+struct VENLY_API FVyCreateTokenTypeRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**Specifies if the token is fungible*/
@@ -57,7 +57,7 @@ struct FVyCreateTokenTypeRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyCreateTokenTypeRequestRef : public UObject
+class VENLY_API UVyCreateTokenTypeRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:
@@ -76,7 +76,7 @@ class UVyCreateTokenTypeRequestRef : public UObject
 };
 //RESPONSE [TokenTypeView]
 USTRUCT(BlueprintType)
-struct FVyCreateTokenTypeResponse : public FVyApiResponse
+struct VENLY_API FVyCreateTokenTypeResponse : public FVyApiResponse
 {
 	GENERATED_BODY();
 	UPROPERTY(BlueprintReadOnly, Category="Venly") FVyTokenTypeDto Result;

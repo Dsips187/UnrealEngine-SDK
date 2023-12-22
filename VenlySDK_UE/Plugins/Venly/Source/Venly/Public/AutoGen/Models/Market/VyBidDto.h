@@ -8,7 +8,7 @@
 * Bid data transfer object
 */
 USTRUCT(BlueprintType)
-struct FVyBidDto : public FVyDTO
+struct VENLY_API FVyBidDto : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The unique identifier of the bid*/
@@ -27,7 +27,7 @@ struct FVyBidDto : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyBidDtoRef : public UObject
+class VENLY_API UVyBidDtoRef : public UObject
 {
 	GENERATED_BODY()
 	public:

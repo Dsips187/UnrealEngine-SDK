@@ -2,8 +2,8 @@
 #include "Models/VyCoreModels.h"
 
 #include "AutoGen/Optionals/VyOptString.h"
-#include "AutoGen/Optionals/VyOptNetwork.h"
 #include "AutoGen/VyEnums_generated.h"
+#include "AutoGen/Optionals/VyOptNetwork.h"
 #include "AutoGen/Optionals/VyOptDouble.h"
 #include "VyGasTransactionRequest.generated.h"
 
@@ -11,7 +11,7 @@
 * Request parameters for a gas transaction
 */
 USTRUCT(BlueprintType)
-struct FVyGasTransactionRequest : public FVyDTO
+struct VENLY_API FVyGasTransactionRequest : public FVyDTO
 {
 	GENERATED_BODY()
 	/**The ID of the wallet*/
@@ -36,7 +36,7 @@ struct FVyGasTransactionRequest : public FVyDTO
 
 
 UCLASS(BlueprintType)
-class UVyGasTransactionRequestRef : public UObject
+class VENLY_API UVyGasTransactionRequestRef : public UObject
 {
 	GENERATED_BODY()
 	public:

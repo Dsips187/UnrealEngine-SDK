@@ -7,6 +7,14 @@
 		{
 			"Name": "VenlySDK_UE_Beamable",
 			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		},
+		{
+			"Name": "VenlySDK_UE_Beamable_MicroservicesBP",
+			"Type": "UncookedOnly",
 			"LoadingPhase": "Default"
 		}
 	],
@@ -17,6 +25,10 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "BeamableCore",
+			"Enabled": true
 		}
 	]
 }
